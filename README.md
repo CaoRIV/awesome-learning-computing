@@ -33,10 +33,11 @@ Repository hướng tới ba kết quả:
 
 | Track | Focus | Status |
 |---|---|---|
-| [Object-Oriented Programming](oop-knowledge-base/README.md) | OOP, SOLID, Design Patterns, OOAD và hướng chuyển sang Software Architecture. | Foundation available |
+| [Object-Oriented Programming](oop-knowledge-base/README.md) | OOP, ownership, object lifetime, SOLID, Design Patterns và architecture bridge theo hướng code-centric. | Foundation available |
+| [Software Requirements & OOAD](OOAD-Knowledge-Base/README.md) | Requirements Engineering, SRS, Use Cases, OO Analysis, UML, OO Design và traceability tới code/test. | Module 01 available |
 | Programming Foundations | Programming models, problem solving, debugging và language fundamentals. | Planned |
 | Computer Science Foundations | Discrete Mathematics, algorithms, data structures, computation và complexity. | Planned |
-| Software Engineering | Requirements, testing, code quality, delivery, maintenance và engineering practices. | Planned |
+| Software Engineering | Testing, code quality, delivery, maintenance và engineering practices ngoài track Requirements & OOAD. | In progress |
 | Computer Systems | Computer architecture, operating systems, concurrency và performance. | Planned |
 | Networks and Distributed Systems | Networking, distributed computation, consistency, reliability và scalability. | Planned |
 | Data and Databases | Data modeling, SQL, storage engines, transactions và data systems. | Planned |
@@ -45,7 +46,7 @@ Repository hướng tới ba kết quả:
 | Cloud and DevOps | Cloud platforms, containers, infrastructure, observability và operations. | Planned |
 | Mathematics for Computing | Logic, discrete structures, probability, statistics và linear algebra. | Planned |
 
-`Foundation available` nghĩa là track đã có roadmap, curriculum structure, topic dependencies và content-quality contract. Nó không có nghĩa toàn bộ lesson content đã hoàn thành.
+`Foundation available` nghĩa là track đã có roadmap, curriculum structure, topic dependencies và content-quality contract. `Module 01 available` nghĩa foundation và toàn bộ lesson của Module 01 đã hoàn thành; các module sau vẫn đang được triển khai.
 
 ## Available Now
 
@@ -65,6 +66,27 @@ Các entry point:
 
 OOP track sử dụng **C++20** làm ngôn ngữ chính để object lifetime, ownership, RAII, value semantics, copy/move semantics và runtime polymorphism được trình bày đầy đủ. Java hoặc C# chỉ được dùng khi phép so sánh giúp làm rõ concept.
 
+### Software Requirements & OOAD Knowledge Base
+
+Track thứ hai đi từ business problem tới implementation evidence:
+
+> Business Need → Requirements → SRS → Use Cases → OO Analysis → UML → OO Design → Code & Tests
+
+Các entry point:
+
+- [Requirements & OOAD Overview](OOAD-Knowledge-Base/README.md) — Trạng thái curriculum, cách học và outputs của từng lesson.
+- [Learning Roadmap](OOAD-Knowledge-Base/00-Roadmap/roadmap.md) — Năng lực đầu ra, các chặng và exit criteria.
+- [Knowledge Architecture](OOAD-Knowledge-Base/00-Roadmap/knowledge-architecture.md) — Artifact contract, traceability spine và content-quality workflow.
+- [Concept Dependency Map](OOAD-Knowledge-Base/00-Roadmap/dependency-map.md) — Prerequisite và feedback loops từ requirements tới tests.
+- [Complete Table of Contents](OOAD-Knowledge-Base/00-Roadmap/table-of-contents.md) — Curriculum contract và trạng thái từng topic.
+- [Study Order](OOAD-Knowledge-Base/00-Roadmap/study-order.md) — Exam-first, project-first và deep-study paths.
+- [Glossary](OOAD-Knowledge-Base/00-Roadmap/glossary.md) — Thuật ngữ English–Vietnamese và các distinction quan trọng.
+- [Module 01 — Software Requirements Engineering](OOAD-Knowledge-Base/01-Requirements/requirements-engineering.md) — Entry point của module nội dung đầu tiên.
+
+Module 01 hiện có 9 lessons hoàn chỉnh: Requirements Engineering, Stakeholders, Functional Requirements, Quality Requirements, Elicitation, Analysis, Prioritization, User Stories và Validation. Mỗi lesson gồm mental model, workflow, worked example, common mistakes, artifact checklist, bài tập bốn cấp độ và exam preparation.
+
+Track này dùng **Food Delivery — Order lifecycle** làm anchor example để giữ consistency và traceability; Library, Hotel, Banking và University được dùng làm comparative exercises. Track không ép mọi dự án phải tạo mọi UML diagram: mỗi artifact chỉ được tạo khi trả lời một modeling hoặc design question cụ thể.
+
 ## How to Use This Repository
 
 ### Học tuần tự
@@ -72,8 +94,8 @@ OOP track sử dụng **C++20** làm ngôn ngữ chính để object lifetime, o
 1. Mở roadmap của track và kiểm tra prerequisite.
 2. Học topic theo dependency graph, không chỉ theo số thứ tự file.
 3. Tự giải thích concept trước khi đọc lại summary.
-4. Compile, chạy và thay đổi example code.
-5. Hoàn thành Mini Exercise và review bằng acceptance criteria.
+4. Tạo, chạy hoặc thay đổi artifact thực hành: requirement, model, diagram hay example code tùy track.
+5. Hoàn thành exercises và review bằng checklist hoặc acceptance criteria.
 6. Chỉ chuyển module sau khi đạt checkpoint hoặc exit criteria.
 
 ### Tra cứu concept
@@ -175,14 +197,33 @@ Cấu trúc hiện tại:
 ```text
 awesome-learning-computing/
 ├── README.md
-└── oop-knowledge-base/
+├── oop-knowledge-base/
+│   ├── README.md
+│   └── 00-meta/
+│       ├── 01-learning-roadmap.md
+│       ├── 02-knowledge-base-structure.md
+│       ├── 03-table-of-contents.md
+│       ├── 04-topic-dependencies.md
+│       └── topic-template.md
+└── OOAD-Knowledge-Base/
     ├── README.md
-    └── 00-meta/
-        ├── 01-learning-roadmap.md
-        ├── 02-knowledge-base-structure.md
-        ├── 03-table-of-contents.md
-        ├── 04-topic-dependencies.md
-        └── topic-template.md
+    ├── 00-Roadmap/
+    │   ├── roadmap.md
+    │   ├── knowledge-architecture.md
+    │   ├── dependency-map.md
+    │   ├── table-of-contents.md
+    │   ├── study-order.md
+    │   └── glossary.md
+    └── 01-Requirements/
+        ├── requirements-engineering.md
+        ├── stakeholders.md
+        ├── functional-requirements.md
+        ├── non-functional-requirements.md
+        ├── elicitation.md
+        ├── analysis.md
+        ├── prioritization.md
+        ├── user-stories.md
+        └── validation.md
 ```
 
 Mỗi track mới chỉ được tạo khi đã xác định:
@@ -208,6 +249,19 @@ Quy tắc này giữ repository có cấu trúc và tránh tạo nhiều directo
 - [ ] SOLID and Design Patterns modules.
 - [ ] OOAD and real-world case studies.
 - [ ] Architecture and System Design bridge.
+
+### Phase 1B — Software Requirements & OOAD
+
+- [x] Learning roadmap và knowledge architecture.
+- [x] Concept dependency map, study order và glossary.
+- [x] Complete curriculum table of contents.
+- [x] Module 01 — Software Requirements Engineering.
+- [ ] Module 02 — SRS, requirement quality và traceability.
+- [ ] Module 03 — Use Cases.
+- [ ] Module 04 — Object-Oriented Analysis.
+- [ ] Module 05 — UML modeling views.
+- [ ] Module 06 — Object-Oriented Design, GRASP, SOLID và Design Patterns.
+- [ ] Integrated case studies, exercises và exam preparation.
 
 ### Phase 2 — Core Computer Science
 
@@ -283,4 +337,3 @@ Với thay đổi lớn, proposal nên mô tả learning gap, prerequisite, expe
 ## Footnotes
 
 The [Awesome badge](https://awesome.re) identifies the repository's curated-learning direction. It does not imply that this project has been accepted into the official Awesome index.
-
