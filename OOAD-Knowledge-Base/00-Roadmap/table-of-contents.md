@@ -9,129 +9,131 @@ Mục lục này là curriculum contract. Checkbox thể hiện trạng thái le
 - [x] [Dependency Map](dependency-map.md)
 - [x] [Complete Table of Contents](table-of-contents.md)
 - [x] [Study Order](study-order.md)
-- [ ] Glossary: Vietnamese explanation + canonical English terms
+- [x] [Glossary: Vietnamese explanation + canonical English terms](glossary.md)
 
-## 01 — Software Requirements Engineering
+## 01 — Software Requirements Engineering ✅
+
+**Trạng thái:** hoàn thành 9/9 lessons. Mỗi lesson có worked example, common mistakes, artifact checklist, bốn cấp bài tập và exam preparation.
 
 ### 01.1 Requirements Engineering Fundamentals
 
-- [ ] Requirement là gì?
-- [ ] Software requirement và các abstraction level
-- [ ] Requirements Engineering lifecycle
-- [ ] Vì sao requirement defect có chi phí lan truyền
-- [ ] Ambiguity, conflict và volatility
-- [ ] Baseline, version và change
-- [ ] Example: “giao đồ ăn nhanh” từ vague goal thành analyzable problem
-- [ ] Exercises và exam preparation
+- [x] Requirement là gì?
+- [x] Software requirement và các abstraction level
+- [x] Requirements Engineering lifecycle
+- [x] Vì sao requirement defect có chi phí lan truyền
+- [x] Ambiguity, conflict và volatility
+- [x] Baseline, version và change
+- [x] Example: “giao đồ ăn nhanh” từ vague goal thành analyzable problem
+- [x] Exercises và exam preparation
 
-**File dự kiến:** `01-Requirements/requirements-engineering.md`
+**Lesson:** [requirements-engineering.md](../01-Requirements/requirements-engineering.md)
 
 ### 01.2 Stakeholders
 
-- [ ] Stakeholder, user, customer và actor
-- [ ] Business owner, administrator, developer, tester, regulator
-- [ ] External system như một stakeholder/interaction party tùy ngữ cảnh
-- [ ] Identify → Classify → Analyze → Prioritize
-- [ ] Influence/interest, authority, impact và communication need
-- [ ] Stakeholder conflict và missing stakeholder
-- [ ] Worked example + stakeholder map
-- [ ] Exercises và exam preparation
+- [x] Stakeholder, user, customer và actor
+- [x] Business owner, administrator, developer, tester, regulator
+- [x] External system như một stakeholder/interaction party tùy ngữ cảnh
+- [x] Identify → Classify → Analyze → Prioritize
+- [x] Influence/interest, authority, impact và communication need
+- [x] Stakeholder conflict và missing stakeholder
+- [x] Worked example + stakeholder map
+- [x] Exercises và exam preparation
 
-**File dự kiến:** `01-Requirements/stakeholders.md`
+**Lesson:** [stakeholders.md](../01-Requirements/stakeholders.md)
 
 ### 01.3 Functional Requirements
 
-- [ ] Business functionality
-- [ ] User interaction và observable system behavior
-- [ ] Input, output và response
-- [ ] Business rule so với functional requirement
-- [ ] Trigger–response và conditional behavior
-- [ ] Functional decomposition without UI bias
-- [ ] Bad/good requirement rewriting
-- [ ] Exercises và exam preparation
+- [x] Business functionality
+- [x] User interaction và observable system behavior
+- [x] Input, output và response
+- [x] Business rule so với functional requirement
+- [x] Trigger–response và conditional behavior
+- [x] Functional decomposition without UI bias
+- [x] Bad/good requirement rewriting
+- [x] Exercises và exam preparation
 
-**File dự kiến:** `01-Requirements/functional-requirements.md`
+**Lesson:** [functional-requirements.md](../01-Requirements/functional-requirements.md)
 
 ### 01.4 Non-functional / Quality Requirements
 
-- [ ] Quality requirement, constraint và global concern
-- [ ] Performance, security, reliability, availability
-- [ ] Scalability, maintainability, usability
-- [ ] Portability và compatibility
-- [ ] Measurable quality scenario
-- [ ] Trade-offs giữa quality attributes
-- [ ] Khi “NFR” thực sự tạo functional behavior
-- [ ] Exercises và exam preparation
+- [x] Quality requirement, constraint và global concern
+- [x] Performance, security, reliability, availability
+- [x] Scalability, maintainability, usability
+- [x] Portability và compatibility
+- [x] Measurable quality scenario
+- [x] Trade-offs giữa quality attributes
+- [x] Khi “NFR” thực sự tạo functional behavior
+- [x] Exercises và exam preparation
 
-**File dự kiến:** `01-Requirements/non-functional-requirements.md`
+**Lesson:** [non-functional-requirements.md](../01-Requirements/non-functional-requirements.md)
 
 ### 01.5 Requirement Elicitation
 
 Với mỗi kỹ thuật: What, How, Advantages, Disadvantages, When to use, Example.
 
-- [ ] Interview
-- [ ] Questionnaire
-- [ ] Observation/contextual inquiry
-- [ ] Workshop
-- [ ] Brainstorming
-- [ ] Document analysis
-- [ ] Focus group
-- [ ] Prototyping
-- [ ] Chọn phối hợp kỹ thuật theo risk/uncertainty
-- [ ] Elicitation plan, question design và note validation
-- [ ] Exercises và exam preparation
+- [x] Interview
+- [x] Questionnaire
+- [x] Observation/contextual inquiry
+- [x] Workshop
+- [x] Brainstorming
+- [x] Document analysis
+- [x] Focus group
+- [x] Prototyping
+- [x] Chọn phối hợp kỹ thuật theo risk/uncertainty
+- [x] Elicitation plan, question design và note validation
+- [x] Exercises và exam preparation
 
-**File dự kiến:** `01-Requirements/elicitation.md`
+**Lesson:** [elicitation.md](../01-Requirements/elicitation.md)
 
 ### 01.6 Requirement Analysis
 
-- [ ] Classification và organization
-- [ ] Dependency và impact
-- [ ] Conflict và negotiation
-- [ ] Feasibility
-- [ ] Consistency và completeness
-- [ ] Verifiability/testability
-- [ ] Detect ambiguity, omission, contradiction và over-specification
-- [ ] Modeling hỗ trợ analysis
-- [ ] Exercises và exam preparation
+- [x] Classification và organization
+- [x] Dependency và impact
+- [x] Conflict và negotiation
+- [x] Feasibility
+- [x] Consistency và completeness
+- [x] Verifiability/testability
+- [x] Detect ambiguity, omission, contradiction và over-specification
+- [x] Modeling hỗ trợ analysis
+- [x] Exercises và exam preparation
 
-**File dự kiến:** `01-Requirements/analysis.md`
+**Lesson:** [analysis.md](../01-Requirements/analysis.md)
 
 ### 01.7 Requirement Prioritization
 
-- [ ] Value, risk, urgency, dependency và cost
-- [ ] MoSCoW: Must, Should, Could, Won't this time
-- [ ] Điều kiện để Must thực sự có nghĩa
-- [ ] Priority vs sequence vs release scope
-- [ ] Negotiation khi mọi thứ đều là Must
-- [ ] Full example cho một release
-- [ ] Exercises và exam preparation
+- [x] Value, risk, urgency, dependency và cost
+- [x] MoSCoW: Must, Should, Could, Won't this time
+- [x] Điều kiện để Must thực sự có nghĩa
+- [x] Priority vs sequence vs release scope
+- [x] Negotiation khi mọi thứ đều là Must
+- [x] Full example cho một release
+- [x] Exercises và exam preparation
 
-**File dự kiến:** `01-Requirements/prioritization.md`
+**Lesson:** [prioritization.md](../01-Requirements/prioritization.md)
 
 ### 01.8 User Stories
 
-- [ ] User Story và conversational intent
-- [ ] Format: As a / I want / So that
-- [ ] Acceptance Criteria
-- [ ] INVEST
-- [ ] Story splitting và common smells
-- [ ] Requirement vs User Story vs Use Case
-- [ ] Khi user story không phù hợp
-- [ ] Exercises và exam preparation
+- [x] User Story và conversational intent
+- [x] Format: As a / I want / So that
+- [x] Acceptance Criteria
+- [x] INVEST
+- [x] Story splitting và common smells
+- [x] Requirement vs User Story vs Use Case
+- [x] Khi user story không phù hợp
+- [x] Exercises và exam preparation
 
-**File dự kiến:** `01-Requirements/user-stories.md`
+**Lesson:** [user-stories.md](../01-Requirements/user-stories.md)
 
 ### 01.9 Requirement Validation Overview
 
-- [ ] Verification vs validation
-- [ ] Review, walkthrough và inspection
-- [ ] Prototype/model/test-based validation
-- [ ] Requirement checklist
-- [ ] Validation evidence và unresolved issue
-- [ ] Exercises và exam preparation
+- [x] Verification vs validation
+- [x] Review, walkthrough và inspection
+- [x] Prototype/model/test-based validation
+- [x] Requirement checklist
+- [x] Validation evidence và unresolved issue
+- [x] Exercises và exam preparation
 
-**File dự kiến:** `01-Requirements/validation.md`
+**Lesson:** [validation.md](../01-Requirements/validation.md)
 
 ## 02 — Software Requirements Specification
 
@@ -586,4 +588,3 @@ Business Requirements → Stakeholders → FR/QR → Actors → Use Cases
 | Six systems end-to-end | 07.1–07.6 |
 | Exercises at four levels | 08 |
 | Exam preparation at four views | 09 |
-

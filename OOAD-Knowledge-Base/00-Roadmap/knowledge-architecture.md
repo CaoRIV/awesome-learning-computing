@@ -36,7 +36,7 @@ OOAD-Knowledge-Base/
 │   ├── dependency-map.md
 │   ├── table-of-contents.md
 │   ├── study-order.md
-│   └── glossary.md                         # tạo khi bắt đầu viết module
+│   └── glossary.md
 ├── 01-Requirements/
 │   ├── requirements-engineering.md
 │   ├── stakeholders.md
@@ -289,4 +289,3 @@ Knowledge base này:
 - đề cập testing từ acceptance/traceability perspective, không thay thế curriculum Software Testing;
 - không coi UML là quy trình phát triển phần mềm;
 - không ép mọi dự án phải tạo mọi loại diagram.
-
