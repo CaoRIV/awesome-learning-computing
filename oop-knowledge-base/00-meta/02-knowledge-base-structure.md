@@ -4,7 +4,7 @@
 
 Knowledge base được tổ chức thành 8 module ngắn, mỗi module học trong khoảng 30–75 phút. Mục tiêu là ôn nhanh nhưng vẫn chính xác, không biến tài liệu thành danh sách định nghĩa hoặc một khóa C++ nâng cao.
 
-## 1. Planned structure
+## 1. Current structure
 
 ```text
 oop-knowledge-base/
@@ -26,7 +26,7 @@ oop-knowledge-base/
     └── 08-applied-review.md
 ```
 
-Thư mục `modules/` chỉ được tạo khi bắt đầu viết nội dung, tránh file rỗng hoặc placeholder.
+Toàn bộ 8 files trong `modules/` đã có lesson content hoàn chỉnh; không có file rỗng hoặc placeholder.
 
 ## 2. Scope rules
 
@@ -130,4 +130,3 @@ Một module hoàn thành khi:
 ## Summary
 
 Cấu trúc này tối ưu cho tốc độ ôn tập: đủ sâu để tránh hiểu sai OOP, nhưng đủ gọn để hoàn thành trong một ngày. Mọi chi tiết không trực tiếp cải thiện khả năng thiết kế, đọc hoặc review code OOP đều được hoãn sang track nâng cao.
-

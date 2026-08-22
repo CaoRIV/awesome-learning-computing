@@ -20,16 +20,18 @@ Lộ trình dùng **C++20** làm ngôn ngữ chính, hoàn thành trong khoảng
 
 ## Lộ trình 8 module
 
+**Trạng thái:** 8/8 modules đã hoàn thành và được syntax-check với C++20.
+
 | Module | Chủ đề | Thời lượng |
 |---|---|---:|
-| 1 | OOP Mental Model | 30–45 phút |
-| 2 | Class, Object và Object Lifecycle | 45–60 phút |
-| 3 | Encapsulation và Abstraction | 45–60 phút |
-| 4 | Object Relationships và Composition | 45–60 phút |
-| 5 | Inheritance, Polymorphism và Dynamic Dispatch | 60–75 phút |
-| 6 | Ownership, Lifetime và RAII trong C++ | 45–60 phút |
-| 7 | SOLID Essentials | 60–75 phút |
-| 8 | Applied Review: Thiết kế một hệ thống nhỏ | 60–90 phút |
+| 1 | [OOP Mental Model](modules/01-oop-mental-model.md) | 30–45 phút |
+| 2 | [Class, Object và Object Lifecycle](modules/02-class-object-lifecycle.md) | 45–60 phút |
+| 3 | [Encapsulation và Abstraction](modules/03-encapsulation-abstraction.md) | 45–60 phút |
+| 4 | [Object Relationships và Composition](modules/04-object-relationships-composition.md) | 45–60 phút |
+| 5 | [Inheritance, Polymorphism và Dynamic Dispatch](modules/05-inheritance-polymorphism.md) | 60–75 phút |
+| 6 | [Ownership, Lifetime và RAII trong C++](modules/06-cpp-ownership-lifetime-raii.md) | 45–60 phút |
+| 7 | [SOLID Essentials](modules/07-solid-essentials.md) | 60–75 phút |
+| 8 | [Applied Review: Notification System](modules/08-applied-review.md) | 60–90 phút |
 
 ## Sau khi hoàn thành
 
@@ -78,4 +80,3 @@ Học đủ 8 module, tự trả lời Interview Questions không nhìn tài li�
 ### Ôn cho công việc
 
 Tập trung Module 3 → 4 → 5 → 6 → 7 → 8. Với mỗi module, lấy một class trong codebase thật và áp dụng review checklist.
-

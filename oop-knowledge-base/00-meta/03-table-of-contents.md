@@ -6,7 +6,7 @@ Curriculum gồm 8 module, tổng thời lượng 6–8 giờ. Nội dung tập 
 
 ## Module 1 — OOP Mental Model
 
-Planned file: `modules/01-oop-mental-model.md`
+Lesson: [01-oop-mental-model.md](../modules/01-oop-mental-model.md)
 
 ### Core concepts
 
@@ -26,7 +26,7 @@ Planned file: `modules/01-oop-mental-model.md`
 
 ## Module 2 — Class, Object và Object Lifecycle
 
-Planned file: `modules/02-class-object-lifecycle.md`
+Lesson: [02-class-object-lifecycle.md](../modules/02-class-object-lifecycle.md)
 
 ### Core concepts
 
@@ -48,7 +48,7 @@ Planned file: `modules/02-class-object-lifecycle.md`
 
 ## Module 3 — Encapsulation và Abstraction
 
-Planned file: `modules/03-encapsulation-abstraction.md`
+Lesson: [03-encapsulation-abstraction.md](../modules/03-encapsulation-abstraction.md)
 
 ### Core concepts
 
@@ -70,7 +70,7 @@ Planned file: `modules/03-encapsulation-abstraction.md`
 
 ## Module 4 — Object Relationships và Composition
 
-Planned file: `modules/04-object-relationships-composition.md`
+Lesson: [04-object-relationships-composition.md](../modules/04-object-relationships-composition.md)
 
 ### Core concepts
 
@@ -102,7 +102,7 @@ Planned file: `modules/04-object-relationships-composition.md`
 
 ## Module 5 — Inheritance, Polymorphism và Dynamic Dispatch
 
-Planned file: `modules/05-inheritance-polymorphism.md`
+Lesson: [05-inheritance-polymorphism.md](../modules/05-inheritance-polymorphism.md)
 
 ### Core concepts
 
@@ -129,7 +129,7 @@ Planned file: `modules/05-inheritance-polymorphism.md`
 
 ## Module 6 — Ownership, Lifetime và RAII trong C++
 
-Planned file: `modules/06-cpp-ownership-lifetime-raii.md`
+Lesson: [06-cpp-ownership-lifetime-raii.md](../modules/06-cpp-ownership-lifetime-raii.md)
 
 ### Core concepts
 
@@ -153,7 +153,7 @@ Planned file: `modules/06-cpp-ownership-lifetime-raii.md`
 
 ## Module 7 — SOLID Essentials
 
-Planned file: `modules/07-solid-essentials.md`
+Lesson: [07-solid-essentials.md](../modules/07-solid-essentials.md)
 
 ### Foundation
 
@@ -181,7 +181,7 @@ Planned file: `modules/07-solid-essentials.md`
 
 ## Module 8 — Applied Review
 
-Planned file: `modules/08-applied-review.md`
+Lesson: [08-applied-review.md](../modules/08-applied-review.md)
 
 ### Case study
 
@@ -234,4 +234,3 @@ Không thuộc core OOP refresher:
 | Quản lý lifetime trong C++ | 6 |
 | Review bằng SOLID | 7 |
 | Áp dụng tổng hợp | 8 |
-

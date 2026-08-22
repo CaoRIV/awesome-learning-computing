@@ -33,7 +33,7 @@ Repository hướng tới ba kết quả:
 
 | Track | Focus | Status |
 |---|---|---|
-| [Object-Oriented Programming](oop-knowledge-base/README.md) | Core OOP, C++ object lifetime, SOLID essentials và bài tập review tổng hợp trong 6–8 giờ. | Refresher structure available |
+| [Object-Oriented Programming](oop-knowledge-base/README.md) | Core OOP, C++ object lifetime, SOLID essentials và bài tập review tổng hợp trong 6–8 giờ. | 8 modules available |
 | [Software Requirements & OOAD](OOAD-Knowledge-Base/README.md) | Requirements Engineering, SRS, Use Cases, OO Analysis, UML, OO Design và traceability tới code/test. | Module 01 available |
 | Programming Foundations | Programming models, problem solving, debugging và language fundamentals. | Planned |
 | Computer Science Foundations | Discrete Mathematics, algorithms, data structures, computation và complexity. | Planned |
@@ -46,7 +46,7 @@ Repository hướng tới ba kết quả:
 | Cloud and DevOps | Cloud platforms, containers, infrastructure, observability và operations. | Planned |
 | Mathematics for Computing | Logic, discrete structures, probability, statistics và linear algebra. | Planned |
 
-`Refresher structure available` nghĩa OOP track đã có roadmap 6–8 giờ, curriculum 8 module, topic dependencies và content-quality contract. `Module 01 available` nghĩa foundation và toàn bộ lesson của Module 01 thuộc OOAD track đã hoàn thành; các module sau vẫn đang được triển khai.
+`8 modules available` nghĩa OOP Quick Review đã có toàn bộ lesson content và C++ examples. `Module 01 available` nghĩa foundation và toàn bộ lesson của Module 01 thuộc OOAD track đã hoàn thành; các module sau vẫn đang được triển khai.
 
 ## Available Now
 
@@ -224,10 +224,10 @@ Quy tắc này giữ repository có cấu trúc và tránh tạo nhiều directo
 - [x] Knowledge base architecture.
 - [x] Curriculum 8 module and topic dependencies.
 - [x] Standardized topic template.
-- [ ] Modules 1–3: mental model, class design, encapsulation and abstraction.
-- [ ] Modules 4–6: relationships, polymorphism, ownership and RAII.
-- [ ] Module 7: SOLID essentials.
-- [ ] Module 8: applied design review.
+- [x] Modules 1–3: mental model, class design, encapsulation and abstraction.
+- [x] Modules 4–6: relationships, polymorphism, ownership and RAII.
+- [x] Module 7: SOLID essentials.
+- [x] Module 8: applied design review.
 
 ### Phase 1B — Software Requirements & OOAD
 
