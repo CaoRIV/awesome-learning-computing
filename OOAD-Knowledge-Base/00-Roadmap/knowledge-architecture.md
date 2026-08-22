@@ -85,15 +85,19 @@ OOAD-Knowledge-Base/
 │   ├── university.md
 │   └── food-delivery.md
 ├── 08-Exercises/
-│   ├── basic.md
-│   ├── intermediate.md
-│   ├── advanced.md
-│   └── case-study-prompts.md
+│   ├── 01-requirements.md
+│   ├── 02-srs.md
+│   ├── 03-use-cases.md
+│   ├── 04-oo-analysis.md
+│   ├── 05-uml.md
+│   └── 06-oo-design.md
 └── 09-Exam-Preparation/
-    ├── key-concepts.md
-    ├── common-questions.md
-    ├── comparison-questions.md
-    └── scenario-questions.md
+    ├── 01-requirements.md
+    ├── 02-srs.md
+    ├── 03-use-cases.md
+    ├── 04-oo-analysis.md
+    ├── 05-uml.md
+    └── 06-oo-design.md
 ```
 
 ### Điều chỉnh so với cây khởi đầu
@@ -103,12 +107,12 @@ OOAD-Knowledge-Base/
 - Thêm `uml-overview.md` để dạy cách chọn view trước khi học ký pháp.
 - Thêm `package-diagram.md`, vốn nằm trong scope nhưng thiếu ở cây mẫu.
 - Thêm `food-delivery.md`, case study bắt buộc thứ sáu.
-- Tách `09-Exam-Preparation/` để exam material có thể tái tạo từ module thay vì lẫn vào exercises.
+- Tách `08-Exercises/` và `09-Exam-Preparation/` theo module để lesson tập trung lý thuyết và không lặp nội dung luyện tập.
 - Thêm `case-study-method.md` để sáu case study dùng chung một pipeline và quality contract.
 
-## 4. Đơn vị nội dung chuẩn
+## 4. Đơn vị nội dung chuẩn — theory-first
 
-Mỗi lesson file là một **learning unit**, không phải một glossary entry dài. Cấu trúc mặc định:
+Mỗi lesson file là một **learning unit tập trung vào lý thuyết**, không phải một glossary entry dài hoặc một workbook trộn nhiều mục đích. Cấu trúc mặc định:
 
 ```text
 # Topic
@@ -117,19 +121,18 @@ Mỗi lesson file là một **learning unit**, không phải một glossary entr
 ## Core mental model
 ## What / Why / Problem / How
 ## Boundaries and related concepts
-## Method or workflow
+## Method, reasoning workflow hoặc decision rules
 ## Worked example
 ## Bad example and diagnosis
 ## Alternatives and trade-offs
 ## When not to use
 ## Common mistakes
 ## Artifact checklist
-## Exercises: Basic / Intermediate / Advanced / Case Study
-## Exam preparation
+## Practice and exam links
 ## Summary and next dependencies
 ```
 
-Không bắt buộc giữ heading máy móc nếu làm hỏng mạch giải thích, nhưng mọi câu hỏi trong contract phải được trả lời.
+Không bắt buộc giữ heading máy móc nếu làm hỏng mạch giải thích. Ưu tiên của lesson là: **mental model → distinctions → reasoning → examples → trade-offs**. Exercises và exam questions được lưu theo module trong `08-Exercises/` và `09-Exam-Preparation/`; lesson chỉ liên kết tới đúng section để tránh lặp và giữ mạch lý thuyết.
 
 ## 5. Artifact contract
 
@@ -227,7 +230,7 @@ Các cặp dễ nhầm phải luôn được giải thích bằng cùng một pa
 
 ## 9. Exercise architecture
 
-Mỗi module sinh bốn loại bài tập:
+Mỗi module có một file bài tập tập trung với bốn cấp độ:
 
 | Level | Năng lực cần chứng minh | Không cung cấp ngay |
 |---|---|---|
@@ -236,11 +239,11 @@ Mỗi module sinh bốn loại bài tập:
 | Advanced | Ra quyết định và bảo vệ trade-off | Một “đáp án duy nhất” giả tạo |
 | Case Study | Tạo coherent artifact set | Solution trước khi người học tự làm |
 
-Đáp án/hint về sau nên đặt ở section hoặc file tách biệt để tránh lộ khi luyện tập.
+Lesson không sao chép lại câu hỏi. Đáp án/hint về sau nên đặt ở section hoặc file tách biệt để tránh lộ khi luyện tập.
 
 ## 10. Exam-preparation architecture
 
-Exam preparation không thay thế learning content. Nó được tạo từ bốn view:
+Mỗi module có một file exam-preparation tập trung. Exam preparation không thay thế learning content; nó được tạo từ bốn view:
 
 - **Key Concepts:** mental models bắt buộc nhớ.
 - **Common Questions:** explain/define có điều kiện.

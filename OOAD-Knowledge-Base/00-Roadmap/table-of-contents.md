@@ -13,7 +13,7 @@ Mục lục này là curriculum contract. Checkbox thể hiện trạng thái le
 
 ## 01 — Software Requirements Engineering ✅
 
-**Trạng thái:** hoàn thành 9/9 lessons. Mỗi lesson có worked example, common mistakes, artifact checklist, bốn cấp bài tập và exam preparation.
+**Trạng thái:** hoàn thành 9/9 theory-first lessons. Bài tập và exam preparation được tập trung theo module và liên kết từ từng lesson.
 
 ### 01.1 Requirements Engineering Fundamentals
 
@@ -515,63 +515,29 @@ Business Requirements → Stakeholders → FR/QR → Actors → Use Cases
 
 ## 08 — Exercises
 
-### Basic
+Mỗi file gồm Basic, Intermediate, Advanced và Case Study; không lặp câu hỏi trong lessons.
 
-- [ ] Concept checks và explain-in-your-own-words
-- [ ] Classification và short comparison
-
-### Intermediate
-
-- [ ] Diagnose bad requirements
-- [ ] Identify actors/goals/use cases
-- [ ] Complete or correct partial models
-
-### Advanced
-
-- [ ] Negotiate requirement conflict
-- [ ] Create coherent UML/design set
-- [ ] Review trade-offs and change impact
-
-### Case Study Prompts
-
-- [ ] New domains without immediate answers
-- [ ] Requirements → Use Cases → UML → Design deliverables
-
-**Files dự kiến:** `08-Exercises/basic.md`, `intermediate.md`, `advanced.md`, `case-study-prompts.md`
+| Module | File | Trạng thái |
+|---|---|---|
+| Requirements | [01-requirements.md](../08-Exercises/01-requirements.md) | ✅ Hoàn thành |
+| SRS | `02-srs.md` | Chưa triển khai |
+| Use Cases | `03-use-cases.md` | Chưa triển khai |
+| OO Analysis | `04-oo-analysis.md` | Chưa triển khai |
+| UML | `05-uml.md` | Chưa triển khai |
+| OO Design | `06-oo-design.md` | Chưa triển khai |
 
 ## 09 — Exam Preparation
 
-### Key Concepts
+Mỗi file gồm Key Concepts, Common Questions, Comparison Questions và Scenario Questions.
 
-- [ ] Mental models và minimum recall set theo module
-
-### Common Exam Questions
-
-- [ ] Explain, justify và critique questions
-
-### Comparison Questions
-
-- [ ] Functional vs non-functional/quality
-- [ ] Verification vs validation
-- [ ] Include vs extend
-- [ ] Analysis vs design
-- [ ] Association vs aggregation vs composition
-- [ ] Actor vs user
-- [ ] Use Case vs User Story
-- [ ] Requirement vs specification
-- [ ] State machine vs activity diagram
-- [ ] GRASP vs SOLID vs Design Pattern
-
-### Scenario Questions
-
-- [ ] Identify stakeholders, actors và boundary
-- [ ] Extract/rewrite requirements
-- [ ] Identify use cases và relationships
-- [ ] Discover classes/relationships/responsibilities
-- [ ] Select and build appropriate UML views
-- [ ] Justify design and tests
-
-**Files dự kiến:** `09-Exam-Preparation/key-concepts.md`, `common-questions.md`, `comparison-questions.md`, `scenario-questions.md`
+| Module | File | Trạng thái |
+|---|---|---|
+| Requirements | [01-requirements.md](../09-Exam-Preparation/01-requirements.md) | ✅ Hoàn thành |
+| SRS | `02-srs.md` | Chưa triển khai |
+| Use Cases | `03-use-cases.md` | Chưa triển khai |
+| OO Analysis | `04-oo-analysis.md` | Chưa triển khai |
+| UML | `05-uml.md` | Chưa triển khai |
+| OO Design | `06-oo-design.md` | Chưa triển khai |
 
 ## Coverage matrix với yêu cầu ban đầu
 

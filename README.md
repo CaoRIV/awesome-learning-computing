@@ -68,24 +68,17 @@ OOP track sử dụng **C++20** làm ngôn ngữ chính để object lifetime, o
 
 ### Software Requirements & OOAD Knowledge Base
 
-Track thứ hai đi từ business problem tới implementation evidence:
+Track đi từ business problem tới implementation evidence:
 
 > Business Need → Requirements → SRS → Use Cases → OO Analysis → UML → OO Design → Code & Tests
 
-Các entry point:
+Entry points:
 
-- [Requirements & OOAD Overview](OOAD-Knowledge-Base/README.md) — Trạng thái curriculum, cách học và outputs của từng lesson.
-- [Learning Roadmap](OOAD-Knowledge-Base/00-Roadmap/roadmap.md) — Năng lực đầu ra, các chặng và exit criteria.
-- [Knowledge Architecture](OOAD-Knowledge-Base/00-Roadmap/knowledge-architecture.md) — Artifact contract, traceability spine và content-quality workflow.
-- [Concept Dependency Map](OOAD-Knowledge-Base/00-Roadmap/dependency-map.md) — Prerequisite và feedback loops từ requirements tới tests.
-- [Complete Table of Contents](OOAD-Knowledge-Base/00-Roadmap/table-of-contents.md) — Curriculum contract và trạng thái từng topic.
-- [Study Order](OOAD-Knowledge-Base/00-Roadmap/study-order.md) — Exam-first, project-first và deep-study paths.
-- [Glossary](OOAD-Knowledge-Base/00-Roadmap/glossary.md) — Thuật ngữ English–Vietnamese và các distinction quan trọng.
-- [Module 01 — Software Requirements Engineering](OOAD-Knowledge-Base/01-Requirements/requirements-engineering.md) — Entry point của module nội dung đầu tiên.
+- [Track overview](OOAD-Knowledge-Base/README.md) — Thứ tự học và trạng thái.
+- [Module 01 — Software Requirements Engineering](OOAD-Knowledge-Base/01-Requirements/requirements-engineering.md) — 9 theory-first lessons.
+- [Module 01 exercises](OOAD-Knowledge-Base/08-Exercises/01-requirements.md) và [exam preparation](OOAD-Knowledge-Base/09-Exam-Preparation/01-requirements.md).
 
-Module 01 hiện có 9 lessons hoàn chỉnh: Requirements Engineering, Stakeholders, Functional Requirements, Quality Requirements, Elicitation, Analysis, Prioritization, User Stories và Validation. Mỗi lesson gồm mental model, workflow, worked example, common mistakes, artifact checklist, bài tập bốn cấp độ và exam preparation.
-
-Track này dùng **Food Delivery — Order lifecycle** làm anchor example để giữ consistency và traceability; Library, Hotel, Banking và University được dùng làm comparative exercises. Track không ép mọi dự án phải tạo mọi UML diagram: mỗi artifact chỉ được tạo khi trả lời một modeling hoặc design question cụ thể.
+Phần lý thuyết nằm trong từng lesson; bài tập và luyện thi được tập trung theo module để tránh lặp và giữ mạch học.
 
 ## How to Use This Repository
 
@@ -208,22 +201,9 @@ awesome-learning-computing/
 └── OOAD-Knowledge-Base/
     ├── README.md
     ├── 00-Roadmap/
-    │   ├── roadmap.md
-    │   ├── knowledge-architecture.md
-    │   ├── dependency-map.md
-    │   ├── table-of-contents.md
-    │   ├── study-order.md
-    │   └── glossary.md
-    └── 01-Requirements/
-        ├── requirements-engineering.md
-        ├── stakeholders.md
-        ├── functional-requirements.md
-        ├── non-functional-requirements.md
-        ├── elicitation.md
-        ├── analysis.md
-        ├── prioritization.md
-        ├── user-stories.md
-        └── validation.md
+    ├── 01-Requirements/
+    ├── 08-Exercises/
+    └── 09-Exam-Preparation/
 ```
 
 Mỗi track mới chỉ được tạo khi đã xác định:

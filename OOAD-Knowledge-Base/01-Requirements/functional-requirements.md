@@ -299,52 +299,11 @@ Given nên dùng như notation cho example/criterion, không biến mọi FR th�
 - [ ] Có acceptance criteria hoặc verification method?
 - [ ] Trace được tới business goal?
 
-## 16. Exercises
+## 16. Practice và exam review
 
-### Basic
+- [Bài tập Basic → Case Study](../08-Exercises/01-requirements.md#functional-requirements)
+- [Key concepts, comparison và scenario questions](../09-Exam-Preparation/01-requirements.md#functional-requirements)
 
-1. Phân loại mười phát biểu của một ATM thành FR, QR, rule hoặc design decision.
-2. Viết ba FR theo trigger–condition–response.
-3. Giải thích vì sao CRUD thường không phản ánh business goals.
-
-### Intermediate
-
-Rewrite “Hệ thống phải quản lý đặt phòng và tự động xử lý mọi vấn đề” thành một FR set có success và failure behaviors.
-
-### Advanced
-
-Tạo functional decomposition cho bank transfer, gồm authorization, balance rule, idempotency-related behavior, external failure và notification. Không chọn architecture.
-
-### Case Study
-
-Viết 15 FR cho University Enrollment System, liên kết mỗi FR với stakeholder goal và business rule source. Bao phủ enrollment, waitlist, withdrawal và prerequisite exception.
-
-## 17. Exam preparation
-
-### Key concepts
-
-- FR mô tả observable behavior/capability.
-- Trigger–condition–response giúp viết event-oriented behavior.
-- Rule quyết định policy; FR mô tả hệ thống enforce/expose policy.
-- Functional decomposition không đồng nghĩa class/service decomposition.
-
-### Common exam questions
-
-1. Functional requirement là gì? Cho good/bad examples.
-2. Vì sao không nên mô tả FR bằng UI details?
-3. Business rules liên hệ FR thế nào?
-
-### Comparison questions
-
-- Functional requirement vs business goal.
-- Functional requirement vs business rule.
-- Functional requirement vs use case.
-- Business operation vs CRUD operation.
-
-### Scenario question
-
-Một thư viện muốn “tự động gia hạn sách nếu có thể”. Viết câu hỏi làm rõ, business rules candidate, FR success/failure và acceptance examples.
-
-## 18. Summary và dependency tiếp theo
+## 17. Summary và dependency tiếp theo
 
 FR xác định behavior, nhưng behavior chỉ hữu ích khi biết mức chất lượng và constraints. Học tiếp [Non-functional / Quality Requirements](non-functional-requirements.md).

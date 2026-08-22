@@ -375,52 +375,11 @@ Không có “hoàn toàn không còn uncertainty”. Đủ để baseline/relea
 - [ ] Models làm lộ gap đã phản ánh lại vào source?
 - [ ] Open issues có owner/status?
 
-## 21. Exercises
+## 21. Practice và exam review
 
-### Basic
+- [Bài tập Basic → Case Study](../08-Exercises/01-requirements.md#requirement-analysis)
+- [Key concepts, comparison và scenario questions](../09-Exam-Preparation/01-requirements.md#requirement-analysis)
 
-1. Phân biệt inconsistency, incompleteness và ambiguity bằng ba ví dụ.
-2. Liệt kê năm dependency types.
-3. Chọn model phù hợp để phân tích rule, lifecycle và interface.
-
-### Intermediate
-
-Review một tập requirement đặt phòng gồm search, reserve, pay, cancel. Tạo issue log có ít nhất tám findings thuộc bốn loại.
-
-### Advanced
-
-Phân tích feasibility và conflict cho yêu cầu “bank transfer tức thì, miễn phí, luôn khả dụng và không bao giờ sai”. Viết options/trade-offs và decision inputs.
-
-### Case Study
-
-Với University Enrollment System, tạo decision table cho prerequisite/capacity/waitlist/override, event-response table và dependency map. Không đưa ra design classes.
-
-## 22. Exam preparation
-
-### Key concepts
-
-- Analysis biến evidence thành coherent requirement model.
-- Completeness relative với scope/use; kiểm tra qua nhiều lenses.
-- Feasibility gồm technical, economic, schedule, operational, legal, organizational và data.
-- Model được dùng để tìm defect, không chỉ documentation.
-
-### Common exam questions
-
-1. Requirement analysis gồm những hoạt động nào?
-2. Làm sao phát hiện requirement không complete/testable?
-3. Trình bày quy trình negotiation conflict.
-
-### Comparison questions
-
-- Ambiguity vs inconsistency.
-- Completeness vs correctness.
-- Feasibility vs priority.
-- Business rule vs design constraint.
-
-### Scenario question
-
-Customer yêu cầu xóa dữ liệu ngay, Legal yêu cầu giữ transaction record bảy năm, Support cần lịch sử khi xử lý tranh chấp. Phân tích conflict theo data categories, purpose, authority và candidate resolutions.
-
-## 23. Summary và dependency tiếp theo
+## 22. Summary và dependency tiếp theo
 
 Analysis làm rõ value, risk, dependency và conflict. Học tiếp [Requirement Prioritization](prioritization.md) để quyết định scope/release minh bạch thay vì gắn nhãn cảm tính.

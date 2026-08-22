@@ -287,53 +287,11 @@ Vẫn có thể dùng story để track work, nhưng source specification nằm 
 - [ ] Representation khác được reference khi cần precision?
 - [ ] Definition of Done không bị trộn AC?
 
-## 15. Exercises
+## 15. Practice và exam review
 
-### Basic
+- [Bài tập Basic → Case Study](../08-Exercises/01-requirements.md#user-stories)
+- [Key concepts, comparison và scenario questions](../09-Exam-Preparation/01-requirements.md#user-stories)
 
-1. Giải thích Three Cs và INVEST.
-2. Phân biệt AC và Definition of Done.
-3. Rewrite ba UI-centric stories theo outcome.
-
-### Intermediate
-
-Split story “As a customer, I want to checkout” thành vertical slices. Viết AC cho một slice gồm normal, boundary và failure examples.
-
-### Advanced
-
-Thiết kế representation strategy cho bank transfer: phần nào dùng requirements, use case, stories, decision table và quality scenarios. Giải thích trade-offs.
-
-### Case Study
-
-Tạo story map rút gọn cho Hotel Booking từ search tới cancellation. Chọn Release 1 slices, viết AC và trace về FR/QR/rules.
-
-## 16. Exam preparation
-
-### Key concepts
-
-- Story là Card + Conversation + Confirmation.
-- INVEST là heuristic quality/refinement.
-- AC xác nhận outcome riêng cho item; DoD là quality bar chung.
-- Story không thay mọi dạng specification.
-
-### Common exam questions
-
-1. User story là gì và có đủ thay use case không?
-2. Trình bày INVEST với caveats.
-3. Làm sao split story mà vẫn giữ business value?
-
-### Comparison questions
-
-- Requirement vs User Story.
-- User Story vs Use Case.
-- Acceptance Criteria vs Definition of Done.
-- Epic vs story.
-
-### Scenario question
-
-Story “As a student, I want to manage courses so that enrollment is easy” có vấn đề gì? Hãy split, viết AC và chỉ ra rules cần tách.
-
-## 17. Summary và dependency tiếp theo
+## 16. Summary và dependency tiếp theo
 
 User stories tổ chức conversation và delivery slices. Mọi representation vẫn cần được kiểm tra đúng nhu cầu và đủ quality; học tiếp [Requirement Validation](validation.md).
-

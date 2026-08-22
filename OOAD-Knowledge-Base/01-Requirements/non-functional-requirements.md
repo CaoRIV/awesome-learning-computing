@@ -349,54 +349,11 @@ Thay bằng task/user/context và measure; vẫn có thể giữ qualitative res
 - [ ] Có downstream design/test trace dự kiến?
 - [ ] Thuật ngữ metric không bị nhầm average/percentile/rate?
 
-## 22. Exercises
+## 22. Practice và exam review
 
-### Basic
+- [Bài tập Basic → Case Study](../08-Exercises/01-requirements.md#quality-requirements)
+- [Key concepts, comparison và scenario questions](../09-Exam-Preparation/01-requirements.md#quality-requirements)
 
-1. Phân biệt performance, scalability và availability bằng cùng một API example.
-2. Viết một quality scenario đủ sáu thành phần.
-3. Cho hai ví dụ security concern sinh functional requirements.
-
-### Intermediate
-
-Rewrite năm NFR: “nhanh”, “an toàn”, “dễ bảo trì”, “luôn sẵn sàng”, “hỗ trợ nhiều người dùng”. Ghi rõ câu hỏi cần hỏi trước khi chọn số.
-
-### Advanced
-
-Phân tích trade-offs cho banking transfer giữa consistency, availability, latency, security và auditability. Đề xuất scenario priorities và verification evidence, không chọn vendor.
-
-### Case Study
-
-Tạo quality-attribute set cho Hotel Management System gồm performance, availability, reliability, security, usability, maintainability và compatibility. Liên kết mỗi QR với operation hoặc journey.
-
-## 23. Exam preparation
-
-### Key concepts
-
-- Quality requirement cần context và measure.
-- Constraint giới hạn solution; QR mô tả mức chất lượng.
-- Quality attributes tương tác và tạo trade-offs.
-- NFR concern thường sinh functional behavior.
-
-### Common exam questions
-
-1. Vì sao “system should be fast” là requirement kém?
-2. Trình bày cấu trúc quality scenario.
-3. Giải thích quan hệ giữa availability, reliability và scalability.
-
-### Comparison questions
-
-- Functional vs quality requirement.
-- Reliability vs availability.
-- Performance vs scalability.
-- Portability vs compatibility/interoperability.
-- Security requirement vs security design mechanism.
-
-### Scenario question
-
-Một hệ thống đăng ký môn bị quá tải trong 15 phút đầu. Viết performance/scalability/availability scenarios, nêu trade-offs và verification plan.
-
-## 24. Summary và dependency tiếp theo
+## 23. Summary và dependency tiếp theo
 
 Requirements chỉ tốt khi được khám phá từ nguồn phù hợp. Học tiếp [Requirement Elicitation](elicitation.md) để chọn kỹ thuật thu thập knowledge và uncertainty.
-

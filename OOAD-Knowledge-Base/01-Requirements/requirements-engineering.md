@@ -298,53 +298,11 @@ Software không hoàn toàn kiểm soát hai concern sau, nhưng có thể dự 
 - [ ] Requirement có ID, rationale, priority và status?
 - [ ] Có cách verification/validation khả thi?
 
-## 14. Exercises
+## 14. Practice và exam review
 
-### Basic
+- [Bài tập Basic → Case Study](../08-Exercises/01-requirements.md#requirements-engineering-fundamentals)
+- [Key concepts, comparison và scenario questions](../09-Exam-Preparation/01-requirements.md#requirements-engineering-fundamentals)
 
-1. Giải thích requirement bằng lời của bạn và cho một phản ví dụ.
-2. Phân loại tám phát biểu tự tạo thành goal, FR, QR, rule, constraint, design decision hoặc test.
-3. Nêu ba nguồn làm requirement thay đổi.
-
-### Intermediate
-
-Phân tích phát biểu “Hệ thống thư viện phải cho phép mượn sách dễ dàng và bảo mật”. Liệt kê ambiguity, câu hỏi làm rõ và viết lại thành ít nhất ba candidate requirements khác loại.
-
-### Advanced
-
-Một tổ chức đã ký baseline nhưng regulation mới có hiệu lực trước release. Thiết kế change workflow, impact dimensions, người cần tham gia và evidence cần revalidate.
-
-### Case Study
-
-Với Hotel Management System, tạo problem statement, system boundary, năm business goals và 12 candidate requirements. Không thiết kế class hoặc database ở bước này.
-
-## 15. Exam preparation
-
-### Key concepts
-
-- Requirement là condition/capability cần thiết; specification là representation có cấu trúc của requirements.
-- RE gồm discovery, analysis, specification, validation và management.
-- Ambiguity, conflict và volatility là ba vấn đề khác nhau.
-- Baseline tạo mốc kiểm soát thay đổi, không đóng băng vĩnh viễn.
-
-### Common exam questions
-
-1. Vì sao requirements quan trọng đối với chi phí phần mềm?
-2. Mô tả lifecycle của Requirements Engineering và feedback loops.
-3. Requirement volatility nên được loại bỏ hay quản lý? Giải thích.
-
-### Comparison questions
-
-- Business goal vs software requirement.
-- Requirement vs design decision.
-- Ambiguity vs incompleteness vs conflict.
-- Baseline vs version.
-
-### Scenario question
-
-Một trường đại học yêu cầu “đăng ký môn học nhanh, tự động và công bằng”. Xác định điều đã biết, điều chưa biết, stakeholder cần hỏi và candidate requirement types. Ghi rõ assumptions.
-
-## 16. Summary và dependency tiếp theo
+## 15. Summary và dependency tiếp theo
 
 Requirements Engineering biến uncertainty thành các quyết định có thể kiểm tra và quản lý. Bước tiếp theo là xác định đúng người, quyền lợi và nguồn tri thức trong [Stakeholders](stakeholders.md).
-

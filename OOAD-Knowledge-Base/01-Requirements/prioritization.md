@@ -282,53 +282,11 @@ Không re-prioritize liên tục theo stakeholder mới nhất. Dùng cadence v�
 - [ ] Decision authority và dissent được ghi?
 - [ ] Review triggers xác định?
 
-## 15. Exercises
+## 15. Practice và exam review
 
-### Basic
+- [Bài tập Basic → Case Study](../08-Exercises/01-requirements.md#requirement-prioritization)
+- [Key concepts, comparison và scenario questions](../09-Exam-Preparation/01-requirements.md#requirement-prioritization)
 
-1. Phân biệt Should và Could bằng consequence, không bằng cảm giác.
-2. Cho ví dụ priority khác sequence.
-3. Giải thích vì sao MoSCoW cần timebox.
-
-### Intermediate
-
-Ưu tiên 12 requirements cho Library Release 1. Viết release objective, Must test, dependencies và rationale.
-
-### Advanced
-
-Một release banking có compliance deadline, legacy migration, security debt và feature commitments. Thiết kế decision model, negotiation và risk acceptance process.
-
-### Case Study
-
-Tạo MoSCoW backlog cho University Enrollment launch. Capacity chỉ đủ khoảng 60% candidate scope. Bao gồm quality floor và contingency.
-
-## 16. Exam preparation
-
-### Key concepts
-
-- Priority là relative và context-dependent.
-- MoSCoW chỉ có nghĩa trong timebox/scope cụ thể.
-- Must được kiểm tra bằng consequence và obligation.
-- Learning work có thể cần sequence sớm dù feature chưa build.
-
-### Common exam questions
-
-1. Trình bày MoSCoW và common misuse.
-2. Làm gì khi mọi requirement là Must?
-3. Dependency ảnh hưởng priority và sequence ra sao?
-
-### Comparison questions
-
-- Priority vs urgency.
-- Priority vs sequence.
-- Must vs Should.
-- Value-first vs risk-first prioritization.
-
-### Scenario question
-
-Food Delivery chỉ đủ capacity cho checkout, tracking hoặc promotion. Hãy tạo release objective, phân tích dependency/value/risk và quyết định có rationale.
-
-## 17. Summary và dependency tiếp theo
+## 16. Summary và dependency tiếp theo
 
 Prioritization chọn scope có chủ đích. Học tiếp [User Stories](user-stories.md) để tổ chức conversation và delivery slices mà vẫn trace về requirements.
-

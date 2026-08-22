@@ -368,52 +368,11 @@ Kết hợp methods theo risk và uncertainty.
 - [ ] Acceptance/verification evidence traceable?
 - [ ] Baseline scope/version và change process rõ?
 
-## 19. Exercises
+## 19. Practice và exam review
 
-### Basic
+- [Bài tập Basic → Case Study](../08-Exercises/01-requirements.md#requirement-validation)
+- [Key concepts, comparison và scenario questions](../09-Exam-Preparation/01-requirements.md#requirement-validation)
 
-1. Cho hai ví dụ requirement verify được nhưng validate sai.
-2. Phân biệt review, walkthrough và inspection.
-3. Chọn validation method cho usability, security rule và lifecycle.
-
-### Intermediate
-
-Review mười requirements của Hotel Booking. Tạo defect log, rewrite ba defects lớn và nêu validation participants.
-
-### Advanced
-
-Thiết kế risk-based validation strategy cho bank transfer gồm requirement inspection, state/decision models, security review, test design và approval evidence.
-
-### Case Study
-
-Tạo validation package cho University Enrollment Release 1: plan, roles, checklist, scenario walkthroughs, acceptance examples, exit criteria và issue log format.
-
-## 20. Exam preparation
-
-### Key concepts
-
-- Verification: specification được tạo đúng; Validation: đúng product/need.
-- Review methods khác nhau về structure và purpose.
-- Test design và models là công cụ phát hiện requirement defect.
-- Sign-off phải gắn artifact version/scope và không đóng băng change.
-
-### Common exam questions
-
-1. So sánh verification và validation bằng ví dụ.
-2. Requirement inspection diễn ra thế nào?
-3. Vì sao acceptance criteria hỗ trợ validation?
-
-### Comparison questions
-
-- Verification vs validation.
-- Walkthrough vs inspection.
-- Requirement review vs acceptance testing.
-- Defect vs change request.
-
-### Scenario question
-
-Stakeholder ký requirement “refund ngay” nhưng tester không tạo được expected result vì provider settlement mất nhiều ngày. Hãy phân loại findings, chọn participants và mô tả resolution/evidence.
-
-## 21. Summary và dependency tiếp theo
+## 20. Summary và dependency tiếp theo
 
 Module 01 kết thúc bằng khả năng khám phá, phân tích, ưu tiên và kiểm tra requirements. Module kế tiếp dùng các outputs này để xây dựng Software Requirements Specification theo [Table of Contents](../00-Roadmap/table-of-contents.md#02--software-requirements-specification).

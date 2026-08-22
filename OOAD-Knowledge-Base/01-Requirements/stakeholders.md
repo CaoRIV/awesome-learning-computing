@@ -293,53 +293,11 @@ Không nên dùng consensus tuyệt đối khi một stakeholder có legal accou
 - [ ] Engagement method phù hợp với knowledge cần khám phá?
 - [ ] Register có owner, status và review trigger?
 
-## 15. Exercises
+## 15. Practice và exam review
 
-### Basic
+- [Bài tập Basic → Case Study](../08-Exercises/01-requirements.md#stakeholders)
+- [Key concepts, comparison và scenario questions](../09-Exam-Preparation/01-requirements.md#stakeholders)
 
-1. Cho ví dụ một stakeholder không phải user và một user không phải customer.
-2. Giải thích external system là actor hay stakeholder trong hai context khác nhau.
-3. Liệt kê stakeholder cho hệ thống ATM theo onion model.
-
-### Intermediate
-
-Tạo stakeholder register cho University Enrollment System. Phải có ít nhất một nhóm high-impact/low-power và giải thích cách đại diện nhóm đó.
-
-### Advanced
-
-Thiết kế workshop giải quyết conflict giữa fraud prevention, conversion và privacy cho guest checkout. Chỉ rõ data, roles, authority và decision record.
-
-### Case Study
-
-Với Hotel Management System, xác định stakeholder cho booking, check-in, cancellation, housekeeping và payment. Tạo engagement plan dùng ít nhất bốn kỹ thuật.
-
-## 16. Exam preparation
-
-### Key concepts
-
-- Stakeholder rộng hơn user và actor.
-- Identification phải đi qua toàn lifecycle và ecosystem.
-- Prioritization chủ yếu là ưu tiên engagement/decision involvement.
-- Power không thay thế impact hoặc legitimacy.
-
-### Common exam questions
-
-1. Trình bày quy trình Identify → Classify → Analyze → Prioritize.
-2. Vì sao developer và tester là stakeholders?
-3. Làm sao phát hiện missing stakeholder?
-
-### Comparison questions
-
-- Stakeholder vs user.
-- Customer vs business owner.
-- Stakeholder vs actor.
-- Influence vs impact.
-
-### Scenario question
-
-Một bệnh viện mua hệ thống quản lý lịch khám. Hãy xác định stakeholder, phân loại knowledge/authority và nêu ba conflict có thể xảy ra. Không coi “bệnh viện” là một stakeholder đồng nhất.
-
-## 17. Summary và dependency tiếp theo
+## 16. Summary và dependency tiếp theo
 
 Stakeholder analysis xác định đúng nguồn knowledge, impact và authority. Bước tiếp theo là chuyển needs thành behavior quan sát được trong [Functional Requirements](functional-requirements.md), đồng thời không bỏ qua quality và constraints.
-

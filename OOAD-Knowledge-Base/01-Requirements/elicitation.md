@@ -497,53 +497,11 @@ Ghi conflict và điều tra owner/rationale/risk.
 - [ ] Conflict và open question có owner?
 - [ ] Kết quả trace được tới candidate requirements?
 
-## 19. Exercises
+## 19. Practice và exam review
 
-### Basic
+- [Bài tập Basic → Case Study](../08-Exercises/01-requirements.md#requirement-elicitation)
+- [Key concepts, comparison và scenario questions](../09-Exam-Preparation/01-requirements.md#requirement-elicitation)
 
-1. Chọn kỹ thuật phù hợp cho năm uncertainty khác nhau và giải thích.
-2. Rewrite năm leading questions thành neutral prompts.
-3. Phân biệt focus group và workshop theo purpose/output.
-
-### Intermediate
-
-Thiết kế interview guide 30 phút để khám phá hotel cancellation exceptions. Gồm objective, participant, funnel questions, evidence và validation.
-
-### Advanced
-
-Thiết kế mixed-method elicitation plan cho banking fraud alert. Xử lý privacy, rare-event evidence, customer perception, compliance và operations workflow.
-
-### Case Study
-
-Lập elicitation plan hai vòng cho University Enrollment System. Vòng một khám phá domain; vòng hai giải quyết conflict về capacity, priority và override. Chỉ rõ artifacts sau mỗi activity.
-
-## 20. Exam preparation
-
-### Key concepts
-
-- Elicitation khám phá knowledge/uncertainty; không chỉ hỏi preference.
-- Technique selection phụ thuộc question và evidence.
-- Triangulation làm lộ khác biệt giữa lời nói, tài liệu và thực tế.
-- Candidate requirement chưa phải accepted requirement.
-
-### Common exam questions
-
-1. So sánh ưu/nhược của interview, observation và questionnaire.
-2. Vì sao prototyping là kỹ thuật elicitation?
-3. Mô tả một elicitation plan tốt.
-
-### Comparison questions
-
-- Interview vs questionnaire.
-- Observation vs document analysis.
-- Workshop vs focus group.
-- Throwaway vs evolutionary prototype.
-
-### Scenario question
-
-Nhân viên nhà hàng nói họ luôn cập nhật món hết ngay, nhưng support tickets cho thấy nhiều đơn bị từ chối. Chọn kỹ thuật tiếp theo, giải thích bias và output cần tạo.
-
-## 21. Summary và dependency tiếp theo
+## 20. Summary và dependency tiếp theo
 
 Elicitation tạo evidence và candidate requirements. Học tiếp [Requirement Analysis](analysis.md) để biến chúng thành tập requirements coherent, feasible và verifiable.
-
