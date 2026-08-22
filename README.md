@@ -33,7 +33,7 @@ Repository hướng tới ba kết quả:
 
 | Track | Focus | Status |
 |---|---|---|
-| [Object-Oriented Programming](oop-knowledge-base/README.md) | OOP, ownership, object lifetime, SOLID, Design Patterns và architecture bridge theo hướng code-centric. | Foundation available |
+| [Object-Oriented Programming](oop-knowledge-base/README.md) | Core OOP, C++ object lifetime, SOLID essentials và bài tập review tổng hợp trong 6–8 giờ. | Refresher structure available |
 | [Software Requirements & OOAD](OOAD-Knowledge-Base/README.md) | Requirements Engineering, SRS, Use Cases, OO Analysis, UML, OO Design và traceability tới code/test. | Module 01 available |
 | Programming Foundations | Programming models, problem solving, debugging và language fundamentals. | Planned |
 | Computer Science Foundations | Discrete Mathematics, algorithms, data structures, computation và complexity. | Planned |
@@ -46,25 +46,25 @@ Repository hướng tới ba kết quả:
 | Cloud and DevOps | Cloud platforms, containers, infrastructure, observability và operations. | Planned |
 | Mathematics for Computing | Logic, discrete structures, probability, statistics và linear algebra. | Planned |
 
-`Foundation available` nghĩa là track đã có roadmap, curriculum structure, topic dependencies và content-quality contract. `Module 01 available` nghĩa foundation và toàn bộ lesson của Module 01 đã hoàn thành; các module sau vẫn đang được triển khai.
+`Refresher structure available` nghĩa OOP track đã có roadmap 6–8 giờ, curriculum 8 module, topic dependencies và content-quality contract. `Module 01 available` nghĩa foundation và toàn bộ lesson của Module 01 thuộc OOAD track đã hoàn thành; các module sau vẫn đang được triển khai.
 
 ## Available Now
 
-### Object-Oriented Programming Knowledge Base
+### OOP Quick Review
 
-Track đầu tiên xây dựng nền tảng theo learning path:
+Track OOP cung cấp lộ trình ôn tập ngắn gọn cho sinh viên và người đi làm:
 
-> OOP → SOLID → Design Patterns → OOAD → Software Architecture → System Design
+> Mental Model → Class Design → Relationships → Polymorphism → C++ Lifetime → SOLID → Applied Review
 
 Các entry point:
 
-- [OOP Learning Roadmap](oop-knowledge-base/00-meta/01-learning-roadmap.md) — Thứ tự học, outcomes, checkpoints và exit criteria.
+- [OOP Learning Roadmap](oop-knowledge-base/00-meta/01-learning-roadmap.md) — Lộ trình 8 module trong 6–8 giờ.
 - [Knowledge Base Structure](oop-knowledge-base/00-meta/02-knowledge-base-structure.md) — Kiến trúc nội dung, code standards và Definition of Done.
-- [Complete Table of Contents](oop-knowledge-base/00-meta/03-table-of-contents.md) — Curriculum đầy đủ từ fundamentals đến architecture bridge.
+- [Complete Table of Contents](oop-knowledge-base/00-meta/03-table-of-contents.md) — Nội dung core OOP và review checklist.
 - [Topic Dependencies](oop-knowledge-base/00-meta/04-topic-dependencies.md) — Prerequisite graph và critical learning paths.
 - [Topic Template](oop-knowledge-base/00-meta/topic-template.md) — Content contract dùng cho từng learning unit.
 
-OOP track sử dụng **C++20** làm ngôn ngữ chính để object lifetime, ownership, RAII, value semantics, copy/move semantics và runtime polymorphism được trình bày đầy đủ. Java hoặc C# chỉ được dùng khi phép so sánh giúp làm rõ concept.
+OOP track sử dụng **C++20** làm ngôn ngữ chính. Ownership, lifetime, RAII và runtime polymorphism được trình bày ở mức cần thiết để viết code OOP an toàn; chi tiết C++ object model nâng cao nằm ngoài core path.
 
 ### Software Requirements & OOAD Knowledge Base
 
@@ -218,17 +218,16 @@ Quy tắc này giữ repository có cấu trúc và tránh tạo nhiều directo
 
 ## Roadmap
 
-### Phase 1 — Object-Oriented Design Foundation
+### Phase 1 — OOP Quick Review
 
 - [x] Learning roadmap.
 - [x] Knowledge base architecture.
-- [x] Complete curriculum and topic dependencies.
+- [x] Curriculum 8 module and topic dependencies.
 - [x] Standardized topic template.
-- [ ] OOP Fundamentals modules.
-- [ ] Object Relationships and advanced C++ OOP modules.
-- [ ] SOLID and Design Patterns modules.
-- [ ] OOAD and real-world case studies.
-- [ ] Architecture and System Design bridge.
+- [ ] Modules 1–3: mental model, class design, encapsulation and abstraction.
+- [ ] Modules 4–6: relationships, polymorphism, ownership and RAII.
+- [ ] Module 7: SOLID essentials.
+- [ ] Module 8: applied design review.
 
 ### Phase 1B — Software Requirements & OOAD
 

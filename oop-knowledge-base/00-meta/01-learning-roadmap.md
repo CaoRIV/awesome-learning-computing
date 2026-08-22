@@ -1,462 +1,247 @@
-# Learning Roadmap
+# OOP Quick Review — Learning Roadmap
 
 ## Overview
 
-Roadmap này tổ chức việc học theo dependency của năng lực thiết kế, không theo độ nổi tiếng của thuật ngữ. Mục tiêu không phải đi qua danh sách khái niệm, mà phát triển dần khả năng:
+Roadmap này tối ưu cho việc ôn OOP nhanh và có hệ thống. Nó không cố biến OOP thành một chương trình học kiến trúc phần mềm. Mỗi module chỉ giữ những kiến thức có tác động trực tiếp đến khả năng đọc code, thiết kế class, hiểu object collaboration và nhận diện design problem.
 
-1. mô hình hóa state, behavior, identity và lifetime;
-2. phân bổ responsibility cho object;
-3. kiểm soát coupling, invariants và dependency;
-4. đánh giá substitutability và chọn composition hoặc inheritance;
-5. tạo variation point bằng abstraction và polymorphism;
-6. áp dụng principles và patterns theo pressure thực tế;
-7. chuyển requirement thành thiết kế và code có thể thay đổi an toàn.
+## 1. Baseline
 
-## 1. Cách sử dụng roadmap
+Người học nên biết:
 
-Mỗi topic đi qua vòng lặp:
+- biến, function, condition, loop và container cơ bản;
+- pointer, reference và `const` ở mức sử dụng;
+- cách compile và chạy một chương trình C++ nhỏ.
 
-> Concept → Understanding → Example → Design → Practice → Review
+Không cần biết trước SOLID, Design Patterns hoặc UML.
 
-Không chuyển topic chỉ vì đã đọc xong. Một topic được xem là nắm vững khi người học có thể:
+## 2. Learning loop
 
-- giải thích **What, Why, Problem, How** bằng lời của mình;
-- đọc code và chỉ ra cơ chế runtime hoặc compile-time liên quan;
-- nhận diện bad design cùng failure mode cụ thể;
-- refactor mà không làm thay đổi behavior ngoài ý muốn;
-- nêu ít nhất một trade-off và một trường hợp không nên áp dụng;
-- hoàn thành mini exercise không sao chép ví dụ;
-- kết nối topic với prerequisite và downstream concept.
+Mỗi module đi qua vòng lặp ngắn:
 
-## 2. Baseline trước khi bắt đầu
+> Mental Model → Focused Example → Bad Design → Better Design → Checkpoint
 
-### Kiến thức giả định
+Một module được xem là hoàn thành khi người học:
 
-- C++ cơ bản: function, reference, pointer, `const`, scope, header/source file.
-- Cấu trúc dữ liệu cơ bản và Standard Library: `std::string`, `std::vector`, `std::map`.
-- Compile, link và đọc compiler diagnostics ở mức cơ bản.
-- Biết viết test hoặc ít nhất là assertion để kiểm chứng behavior.
+- giải thích concept bằng lời của mình;
+- dự đoán behavior của example code;
+- chỉ ra vấn đề trong bad design;
+- nêu một trade-off;
+- trả lời checkpoint không nhìn tài liệu.
 
-### C++ bridge cần bổ sung nếu baseline chưa chắc
+## 3. Module 1 — OOP Mental Model
 
-Các chủ đề này không phải OOP, nhưng là prerequisite trực tiếp:
+**Thời lượng:** 30–45 phút.
 
-- value semantics và reference semantics;
-- stack, free store và automatic storage duration;
-- lvalue, rvalue ở mức phục vụ copy/move;
-- `const` correctness;
-- raw pointer so với `std::unique_ptr`, `std::shared_ptr`, `std::weak_ptr`;
-- exception basics và deterministic destruction;
-- header dependency, forward declaration và One Definition Rule ở mức sử dụng.
+### Học gì
 
-### Diagnostic đầu vào
+- Procedural Programming và OOP tổ chức code khác nhau thế nào.
+- Object là state + behavior + identity trong một boundary có responsibility.
+- Bốn khái niệm thường gọi là “four pillars”: Encapsulation, Abstraction, Inheritance và Polymorphism.
+- Vì sao inheritance không phải trung tâm của mọi thiết kế OOP.
 
-Thiết kế một `BankAccount` nhỏ với deposit, withdraw và transaction history. Sau đó tự trả lời:
+### Cần nhớ
 
-1. Invariant của account là gì?
-2. Thành phần nào nên `private`, và vì sao?
-3. Nếu transaction history giữ pointer đến account thì ai sở hữu ai?
-4. Copy account có ý nghĩa domain không?
-5. Làm sao thay đổi policy tính phí mà không sửa mọi account?
+OOP hữu ích khi chương trình có stateful concepts và collaborations cần được tổ chức quanh responsibilities. OOP không tự động tốt hơn free functions, procedural code hoặc functional style.
 
-Diagnostic không dùng để chấm điểm; nó xác định những lỗ hổng cần quay lại khi học Level 1–3.
+### Checkpoint
 
-## 3. Roadmap tổng thể
+Giải thích vì sao một function thuần tính tổng số tiền trong giỏ hàng không nhất thiết phải trở thành method của một object.
 
-| Phase | Trọng tâm | Năng lực đầu ra | Checkpoint chính |
-|---|---|---|---|
-| 0 | C++ object-model bridge | Lý giải value, reference, lifetime và ownership | Trace được construction/destruction/copy/move |
-| 1 | OOP Fundamentals | Thiết kế class giữ invariant và hiểu bốn trụ cột | Refactor procedural module thành object model hợp lý |
-| 2 | Object Relationships | Mô hình hóa quan hệ và chọn composition/inheritance | Vẽ object graph và giải thích ownership |
-| 3 | Advanced OOP in C++ | Viết polymorphic code an toàn về memory/lifetime | Rule of 0, RAII và virtual destruction đúng |
-| 4 | Design Principles & SOLID | Phân tích change pressure và dependency direction | Refactor một thiết kế cứng mà không over-engineer |
-| 5 | Design Patterns | Chọn pattern từ problem/context/consequences | So sánh pattern với naive solution và alternative |
-| 6 | OOAD | Chuyển requirement thành interaction và class design | Trace Requirement → Use Case → Code |
-| 7 | Real-world Design | Thiết kế hệ thống nhỏ theo nhiều iteration | Defend design bằng constraints và trade-offs |
-| 8 | Architecture Bridge | Kết nối object design với boundary cấp hệ thống | Phân biệt object-level và architecture-level decision |
+## 4. Module 2 — Class, Object và Object Lifecycle
 
-## 4. Phase 0 — C++ Object-Model Bridge
+**Thời lượng:** 45–60 phút.
 
-### Mục tiêu
+### Học gì
 
-Xây nền để tránh học OOP C++ như Java có thêm pointer. C++ cho phép object có value semantics, deterministic lifetime và nhiều mô hình ownership; những đặc điểm này ảnh hưởng trực tiếp đến API và thiết kế class.
+- Class, object, state, behavior và identity.
+- Member variable và member function.
+- Constructor, destructor và invariant.
+- Value object so với entity ở mức thực dụng.
+- Construction/destruction order cơ bản.
 
-### Topics
+### Cần nhớ
 
-1. Object, storage duration và lifetime.
-2. Value semantics, identity và reference semantics.
-3. `const` correctness và observable state.
-4. Resource ownership và smart pointers.
-5. Exceptions, stack unwinding và destructor.
-6. Header boundary và dependency vật lý.
+Class tốt không chỉ gom data và functions. Nó đại diện cho một concept có responsibility rõ và giữ object hợp lệ trong suốt lifetime.
 
-### Deliverable
+### Checkpoint
 
-Một chương trình trace lifecycle của object qua return-by-value, pass-by-reference, container insertion và move.
+Thiết kế `BankAccount` sao cho không thể withdraw số âm và không thể đưa balance vào trạng thái bị cấm bởi business rule.
 
-### Exit criteria
+## 5. Module 3 — Encapsulation và Abstraction
 
-- Phân biệt được storage với object lifetime.
-- Không dùng `shared_ptr` như lựa chọn mặc định.
-- Giải thích được khi nào type nên copyable, movable hoặc non-copyable.
-- Biết ownership là quyết định thiết kế, không chỉ là quyết định cấp phát memory.
+**Thời lượng:** 45–60 phút.
 
-## 5. Phase 1 — OOP Fundamentals
+### Học gì
 
-### Module 1.1 — Programming Paradigms
+- Encapsulation, data hiding và access modifiers.
+- Invariant và representation exposure.
+- Getter/setter khi nào hợp lý, khi nào tạo anemic object.
+- Abstraction, interface và implementation hiding.
+- Abstraction khác Encapsulation thế nào.
 
-Học procedural, object-oriented và functional programming như các cách tổ chức computation và change, không phải các phe loại trừ nhau.
+### Cần nhớ
 
-**Outcome:** chọn style phù hợp cho từng phần của chương trình; không biến mọi function thành method hoặc mọi data thành object có getter/setter.
+`private` chỉ là mechanism hỗ trợ. Encapsulation thực sự đạt được khi API bảo vệ invariant và che giấu quyết định có khả năng thay đổi. Abstraction xác định điều client cần biết; Encapsulation kiểm soát detail và state bên trong boundary.
 
-### Module 1.2 — Class and Object
+### Checkpoint
 
-Đi từ state, behavior, identity đến responsibility, invariant, constructor và destructor.
+Refactor một `Rectangle` có public `width` và `height` thành API không cho phép kích thước âm.
 
-**Outcome:** class biểu diễn một abstraction có behavior meaningful, không chỉ là record dữ liệu.
+## 6. Module 4 — Object Relationships và Composition
 
-### Module 1.3 — Encapsulation
+**Thời lượng:** 45–60 phút.
 
-Phân biệt encapsulation với data hiding; dùng access control để bảo vệ invariant và thu nhỏ change surface.
+### Học gì
 
-**Outcome:** thiết kế API khiến invalid state khó hoặc không thể biểu diễn.
+- Association và Dependency.
+- Composition và ownership/lifetime.
+- Aggregation ở mức nhận biết, cùng sự mơ hồ thường gặp.
+- Delegation.
+- HAS-A so với IS-A.
+- Composition over Inheritance.
 
-### Module 1.4 — Abstraction
+### Cần nhớ
 
-Học abstraction như hành động bỏ qua detail không liên quan để tạo một model/useful contract. So sánh interface, abstract class và concrete abstraction.
+Tên relationship không đủ để thiết kế code. Phải hỏi thêm: ai sở hữu object, lifetime ra sao, relation có bắt buộc không và behavior được delegated thế nào.
 
-**Outcome:** tạo contract dựa trên capability và client need, không dựa trên danh sách method tùy tiện.
+### Checkpoint
 
-### Module 1.5 — Inheritance
+Mô tả relationship giữa `Order`, `OrderLine`, `Product` và `PaymentMethod`, bao gồm ownership và lifetime.
 
-Học inheritance sau invariant và abstraction để đánh giá quan hệ **IS-A** bằng substitutability. Bao gồm overriding, access, constructor/destructor, multiple inheritance và common failure modes.
+## 7. Module 5 — Inheritance, Polymorphism và Dynamic Dispatch
 
-**Outcome:** nhận ra fragile base class, inappropriate hierarchy và lý do ưu tiên composition khi reuse không kéo theo subtype relationship.
+**Thời lượng:** 60–75 phút.
 
-### Module 1.6 — Polymorphism
+### Học gì
 
-Phân biệt overloading, templates và runtime polymorphism; hiểu virtual dispatch, object slicing và interface polymorphism.
+- Base class, derived class và public inheritance.
+- IS-A và behavioral substitutability.
+- Overloading so với overriding.
+- Virtual function, pure virtual function và abstract class.
+- Static type, dynamic type và runtime dispatch.
+- Virtual destructor và object slicing.
+- Khi inheritance tạo hierarchy cứng.
 
-**Outcome:** dự đoán method nào được gọi, hiểu cost model cơ bản và thiết kế polymorphic base an toàn.
+### Cần nhớ
 
-### Checkpoint Level 1
+Inheritance phù hợp khi derived object có thể thay thế base object mà không phá contract. Nếu mục tiêu chỉ là reuse code hoặc thay đổi behavior, composition thường đơn giản và linh hoạt hơn.
 
-Refactor một procedural notification module sang hai phương án:
+### Checkpoint
 
-- value-oriented solution với functions và data types;
-- runtime-polymorphic solution với interface.
+Giải thích vì sao `Square : public Rectangle` có thể vi phạm substitutability nếu API cho phép thay đổi width và height độc lập.
 
-So sánh change scenario, testability, allocation, ownership và complexity. Mục tiêu là chứng minh OOP không tự động tốt hơn procedural design.
+## 8. Module 6 — Ownership, Lifetime và RAII trong C++
 
-## 6. Phase 2 — Object Relationships
+**Thời lượng:** 45–60 phút.
 
-### Thứ tự học
+### Học gì
 
-1. Association và navigability.
-2. Dependency và dependency direction.
-3. HAS-A như cách nói informal.
-4. Aggregation và giới hạn diễn giải của nó.
-5. Composition với exclusive ownership/lifetime implication.
-6. Delegation như cách phân phối behavior.
-7. IS-A và substitutability.
-8. Composition over Inheritance như decision framework.
+- Object lifetime và storage duration ở mức cần thiết.
+- Owning so với non-owning reference/pointer.
+- RAII và deterministic destruction.
+- `std::unique_ptr`, `std::shared_ptr` và `std::weak_ptr` theo use case.
+- Rule of 0 là lựa chọn mặc định.
+- Copy/move semantics ở mức nhận diện design implication.
 
-### Outcome
+### Cần nhớ
 
-- Vẽ object graph và ghi rõ cardinality, navigability, ownership, optionality, lifetime.
-- Không suy luận ownership chỉ từ raw pointer hoặc UML diamond.
-- Phân biệt “biết về”, “dùng tạm”, “sở hữu” và “ủy quyền cho” object khác.
-- Chọn inheritance vì polymorphic contract; chọn composition vì capability assembly hoặc reuse.
+Smart pointer không tự giải quyết ownership design. Hãy xác định owner trước, sau đó chọn representation. Ưu tiên value members và Rule of 0; dùng dynamic allocation khi lifetime hoặc polymorphism thực sự yêu cầu.
 
-### Checkpoint Level 2
+### Checkpoint
 
-Thiết kế `Order`, `OrderLine`, `Product`, `Customer`, `PaymentMethod`, `PricingPolicy`. Với mỗi edge, ghi:
+Giải thích vì sao dùng `std::shared_ptr` cho mọi dependency làm ownership khó hiểu và có thể tạo cycle.
 
-- loại relationship;
-- object nào giữ reference;
-- ownership và lifetime;
-- relation có bắt buộc không;
-- behavior được gọi trực tiếp hay delegated;
-- điều gì xảy ra khi object ở đầu kia bị hủy.
+## 9. Module 7 — SOLID Essentials
 
-## 7. Phase 3 — Advanced OOP in C++
+**Thời lượng:** 60–75 phút.
 
-### Cluster 3.1 — Runtime Polymorphism
+### Học gì
 
-- vtable/vptr như mô hình triển khai phổ biến, không phải guarantee của standard;
-- pure virtual function, abstract class và interface convention;
-- virtual destructor;
-- object slicing;
-- clone idiom và covariant return ở mức cần thiết;
-- alternatives: templates, variants, type erasure.
+- High Cohesion và Low Coupling.
+- SRP: reason to change.
+- OCP: variation point có bằng chứng.
+- LSP: behavioral substitutability.
+- ISP: interface theo nhu cầu client.
+- DIP: dependency của policy không bị detail điều khiển.
+- DI là mechanism, không đồng nghĩa với DIP.
+- Dấu hiệu áp dụng SOLID quá mức.
 
-### Cluster 3.2 — Lifetime and Ownership
+### Cần nhớ
 
-- RAII;
-- ownership vocabulary;
-- smart pointers;
-- cyclic ownership;
-- exception safety;
-- dependency injection không làm mơ hồ ownership.
+SOLID giúp đặt câu hỏi về change và dependency. Nó không yêu cầu mỗi class có một method, mọi dependency đều có interface hoặc code không bao giờ được sửa.
 
-### Cluster 3.3 — Special Member Functions
+### Checkpoint
 
-- destructor, copy constructor, copy assignment;
-- move constructor, move assignment;
-- Rule of 3, Rule of 5, Rule of 0;
-- self-assignment, strong/basic/no-throw guarantees;
-- default/delete special members.
+Cho một `CheckoutService` vừa tính giá, lưu order, charge payment và gửi email: xác định responsibility nào thay đổi vì các lý do khác nhau, nhưng không tạo interface nếu chưa có variation/test seam cần thiết.
 
-### Cluster 3.4 — Design Forces
+## 10. Module 8 — Applied Review
 
-- coupling: content, common, control, stamp, data/message ở mức conceptual;
-- cohesion: responsibility và reason to change;
-- immutability;
-- Dependency Injection bằng constructor, method hoặc factory.
+**Thời lượng:** 60–90 phút.
 
-### Checkpoint Level 3
+### Bài toán
 
-Xây một document processing pipeline có pluggable parser và exporter. Yêu cầu:
+Thiết kế core của một notification system hỗ trợ email và SMS. Client có thể gửi message mà không phụ thuộc trực tiếp vào implementation cụ thể.
 
-- ownership rõ tại mọi boundary;
-- không leak, double-delete hoặc dangling reference;
-- polymorphic base có destruction policy đúng;
-- resource-owning type tuân Rule of 0 nếu Standard Library type đã quản lý resource;
-- test fake được inject mà không đưa service locator toàn cục.
+### Yêu cầu
 
-## 8. Phase 4 — Design Principles và SOLID
+- Model state và behavior cần thiết.
+- Dùng encapsulation để giữ object hợp lệ.
+- Chỉ rõ relationship và ownership.
+- Dùng runtime polymorphism hoặc composition có lý do.
+- Thêm một notification channel mới mà không sửa client flow chính.
+- Không dùng global service locator hoặc `shared_ptr` mặc định.
 
-### Foundation principles
+### Review checklist
 
-1. High Cohesion.
-2. Low Coupling.
-3. Program to an Interface.
-4. Encapsulate What Varies.
-5. Composition over Inheritance.
-6. Dependency Inversion.
+1. Responsibility của mỗi class là gì?
+2. Invariant nào được bảo vệ?
+3. Dependency direction có hợp lý không?
+4. Ownership và lifetime có đọc được từ API không?
+5. Inheritance có thỏa substitutability không?
+6. Có abstraction nào chưa mang lại giá trị không?
+7. Change request nào khiến thiết kế hiện tại khó sửa?
 
-### SOLID order theo dependency học tập
+## 11. Ba learning paths
 
-1. **SRP** — responsibility, actor và reason to change.
-2. **ISP** — client-specific contract và interface cohesion.
-3. **DIP** — policy, detail và dependency direction.
-4. **OCP** — stable abstraction và variation point.
-5. **LSP** — behavioral subtype, precondition, postcondition và invariant.
+### Quick Refresh — 3 giờ
 
-Thứ tự này phục vụ học tập; acronym vẫn là S–O–L–I–D. LSP được đặt sau cùng trong learning sequence vì cần hiểu contract, inheritance và polymorphism sâu hơn.
+Module 2 → 3 → 4 → 5 → Review checklist của Module 8.
 
-### Phương pháp học mỗi principle
+### Complete Refresh — 6–8 giờ
 
-- Xác định concrete change pressure.
-- Đọc bad code và dự đoán ripple effect.
-- Viết characterization tests.
-- Refactor từng bước.
-- Đánh giá complexity mới tạo ra.
-- Chỉ ra misunderstanding và overuse condition.
+Module 1 → 8 theo thứ tự.
 
-### Checkpoint Level 4
+### Interview Refresh — một ngày
 
-Refactor một checkout service đang vừa tính giá, lưu order, charge payment và gửi email. Phải đưa ra ít nhất hai phương án, trong đó có một phương án đơn giản không cần interface cho mọi class. Đánh giá theo change frequency, team boundary, test seam và operational complexity.
-
-## 9. Phase 5 — OOP và Design Patterns
-
-### Entry rule
-
-Không học pattern bằng sơ đồ thuộc lòng. Mỗi pattern bắt đầu từ:
-
-> recurring problem + context + forces + failed naive design + consequences
-
-### Learning order
-
-#### Behavioral trước
-
-1. Strategy.
-2. Template Method.
-3. State.
-4. Command.
-5. Observer.
-6. Chain of Responsibility.
-7. Iterator.
-
-Behavioral patterns làm rõ delegation, variation và object collaboration.
-
-#### Creational tiếp theo
-
-1. Factory Method.
-2. Abstract Factory.
-3. Builder.
-4. Prototype.
-5. Singleton.
-
-Singleton được học cuối nhóm để phân tích global state, hidden dependency và test isolation trước khi nói đến use case hợp lệ.
-
-#### Structural sau cùng
-
-1. Adapter.
-2. Facade.
-3. Decorator.
-4. Composite.
-5. Proxy.
-6. Bridge.
-
-### Checkpoint Level 5
-
-Cho một rules engine nhỏ, chọn tối đa hai patterns. Với mỗi pattern phải chứng minh:
-
-- áp lực thay đổi nào tồn tại;
-- naive design thất bại ra sao;
-- complexity mà pattern thêm vào;
-- alternative không dùng pattern;
-- tín hiệu cho thấy nên gỡ pattern.
-
-## 10. Phase 6 — Object-Oriented Analysis and Design
-
-### Flow chính
-
-> Requirement → Use Case → Domain Concepts → Objects → Responsibilities → Collaborations → Classes → Relationships → Design → Code → Feedback
-
-Flow có vòng lặp; code và feedback có thể làm lộ assumption sai trong analysis.
-
-### Topics
-
-- Object-Oriented Analysis (**OOA**) và problem space.
-- Object-Oriented Design (**OOD**) và solution space.
-- Use case, actor, precondition, success path, alternate/exception path.
-- Identifying objects bằng domain language và behavior.
-- Responsibility assignment.
-- CRC cards.
-- Class, sequence và activity diagrams.
-- Boundary–Control–Entity như một heuristic, không phải luật.
-- Traceability từ requirement đến test và code.
-
-### Checkpoint Level 6
-
-Từ requirement “khách có thể đặt trước một bản sách đang được mượn”, tạo:
-
-1. use case đầy đủ;
-2. domain model;
-3. responsibility map;
-4. sequence diagram cho success và failure path;
-5. class design;
-6. core C++ implementation;
-7. tests liên kết ngược với acceptance criteria.
-
-## 11. Phase 7 — Real-world OOP Design
-
-### Case-study sequence
-
-| Thứ tự | Hệ thống | Design pressure chính |
-|---|---|---|
-| 1 | Library Management | circulation rules, identity, reservation, fines |
-| 2 | Parking Lot | allocation strategy, pricing, concurrency boundary |
-| 3 | Banking | invariants, money, transaction consistency, audit |
-| 4 | Hotel Management | availability, reservation lifecycle, policy variation |
-| 5 | E-commerce | catalog/order boundary, pricing, payment, fulfillment |
-| 6 | Food Delivery | state transitions, assignment, external services, events |
-
-### Iteration cho mỗi case study
-
-1. Làm rõ scope và non-goals.
-2. Viết functional/non-functional requirements.
-3. Xây ubiquitous vocabulary nhỏ.
-4. Viết use cases và acceptance criteria.
-5. Nhận diện entities, value objects, services và policies.
-6. Phân bổ responsibilities.
-7. Mô hình hóa relationships, ownership và lifetime.
-8. Vẽ sequence cho critical scenario.
-9. Thiết kế classes và interfaces tối thiểu.
-10. Implement core slice.
-11. Áp một change request để kiểm tra extensibility.
-12. Review SOLID/patterns và loại abstraction không tạo giá trị.
-
-### Capstone
-
-Chọn một trong sáu hệ thống và thực hiện hai iteration. Iteration 2 phải chứa change request không được biết trước ở iteration 1, nhằm kiểm tra thiết kế thay vì trình diễn một diagram tĩnh.
-
-## 12. Phase 8 — Bridge to Software Architecture and System Design
-
-### Mục tiêu
-
-Không kéo object model vượt khỏi phạm vi hiệu quả của nó. Object design xử lý responsibilities và collaboration trong một boundary; architecture xử lý module/service boundary, deployment, data ownership và quality attributes ở quy mô lớn hơn.
-
-### Topics
-
-- package/module boundaries;
-- dependency rule và layered/hexagonal architecture;
-- domain model so với persistence model và transport model;
-- transaction boundary;
-- synchronous call so với event/message;
-- process/machine boundary;
-- scalability, reliability và observability như forces mới;
-- khi OOP không phải abstraction tốt nhất cho data pipeline hoặc highly parallel computation.
-
-### Exit criteria cuối lộ trình
-
-Người học có thể:
-
-- giải thích thiết kế từ requirement đến code;
-- chỉ ra invariant, ownership, lifetime và dependency direction;
-- bảo vệ hoặc bác bỏ inheritance bằng LSP;
-- chọn pattern dựa trên context và consequences;
-- phân biệt flexibility cần thiết với speculative abstraction;
-- review code OOP của người khác bằng evidence;
-- thiết kế và implement core của một hệ thống nhỏ;
-- nhận biết lúc quyết định đã chuyển từ object design sang architecture/system design.
-
-## 13. Nhịp học đề xuất
-
-Roadmap không khóa theo số tuần, nhưng có thể dùng nhịp 16–24 tuần:
-
-| Tỷ lệ thời gian | Hoạt động |
-|---|---|
-| 30% | Đọc concept và tự diễn giải |
-| 25% | Trace, compile và thay đổi example code |
-| 25% | Exercises, refactoring và tests |
-| 15% | Case study hoặc cumulative project |
-| 5% | Retrieval practice và review notes |
-
-Sau mỗi 3–4 topics, làm một cumulative exercise. Sau mỗi level, làm checkpoint trước khi đi tiếp.
-
-## 14. Review strategy
-
-### Retrieval review
-
-Sau 1, 3, 7 và 21 ngày, trả lời không nhìn tài liệu:
+Học đủ 8 module, sau mỗi module tự trả lời:
 
 - concept giải quyết problem gì;
-- invariant/contract nào quan trọng;
-- failure mode thường gặp;
-- trade-off chính;
-- relation với topic trước và sau.
+- bad design thường gặp;
+- một ví dụ code;
+- một trade-off;
+- khi nào không nên dùng.
 
-### Code review lens
+## 12. Exit criteria
 
-Khi đọc code, hỏi theo thứ tự:
+Hoàn thành track khi có thể:
 
-1. Behavior và requirement thực sự là gì?
-2. Invariant nằm ở đâu và ai bảo vệ?
-3. Responsibility có cohesive không?
-4. Dependency nào là stable, dependency nào hay đổi?
-5. Ownership và lifetime có rõ không?
-6. Runtime polymorphism có cần thiết không?
-7. Error path và partial failure được xử lý thế nào?
-8. Test có kiểm tra contract hay khóa chặt implementation?
+- phân biệt bốn OOP concepts mà không dùng định nghĩa vòng tròn;
+- thiết kế class giữ invariant;
+- giải thích relationship kèm ownership/lifetime;
+- dự đoán virtual dispatch;
+- phát hiện slicing và destruction bug;
+- bảo vệ lựa chọn composition hoặc inheritance;
+- review code bằng cohesion, coupling và SOLID;
+- hoàn thành Module 8 và giải thích trade-offs.
 
-## 15. Những anti-goals của roadmap
+## 13. Học tiếp sau core OOP
 
-- Không tối đa hóa số lượng class.
-- Không coi getter/setter là encapsulation mặc định.
-- Không coi hierarchy sâu là bằng chứng của reuse tốt.
-- Không tạo interface chỉ để đạt “đúng SOLID”.
-- Không gắn pattern name sau khi code đã phức tạp mà không phân tích problem.
-- Không dùng UML như output trang trí tách rời requirement và interaction.
-- Không bỏ qua memory, ownership và object lifetime trong C++.
+Chỉ sau khi cần cho công việc hoặc mục tiêu riêng:
 
-## Summary
+- Design Patterns thực dụng: Strategy, Factory, Observer, Decorator.
+- C++ resource management nâng cao: Rule of 3/5, exception safety.
+- OOAD và UML.
+- Software Architecture và System Design.
 
-Learning path trọng yếu là:
-
-> invariant và responsibility → relationships và ownership → abstraction và polymorphism → dependency management → principles → patterns → OOAD → architecture
-
-Thứ tự này giúp mỗi abstraction xuất hiện sau khi người học đã gặp problem mà nó giải quyết, từ đó tạo design reasoning thay vì ghi nhớ định nghĩa.
+Các chủ đề này không phải điều kiện để hoàn thành OOP Quick Review.
 
