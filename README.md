@@ -41,12 +41,14 @@ Repository hướng tới ba kết quả:
 | Computer Systems | Computer architecture, operating systems, concurrency và performance. | Planned |
 | Networks and Distributed Systems | Networking, distributed computation, consistency, reliability và scalability. | Planned |
 | Data and Databases | Data modeling, SQL, storage engines, transactions và data systems. | Planned |
-| Artificial Intelligence | AI foundations, Machine Learning, Deep Learning, NLP và intelligent systems. | Planned |
+| [Artificial Intelligence](artificial-intelligence-knowledge-base/README.md) | Problem framing, Machine Learning, evaluation, neural networks, LLM, RAG và production safety theo hướng thực dụng. | 8 modules available |
 | Cybersecurity | Security foundations, secure software, systems security và threat modeling. | Planned |
 | Cloud and DevOps | Cloud platforms, containers, infrastructure, observability và operations. | Planned |
 | Mathematics for Computing | Logic, discrete structures, probability, statistics và linear algebra. | Planned |
 
 `8 modules available` nghĩa OOP Quick Review đã có toàn bộ lesson content và C++ examples. `Module 01 available` nghĩa foundation và toàn bộ lesson của Module 01 thuộc OOAD track đã hoàn thành; các module sau vẫn đang được triển khai.
+
+Artificial Intelligence cũng đã có đủ 8 core modules. Track này dùng Python làm ngôn ngữ minh họa, ưu tiên một vertical learning path từ problem tới production thay vì tách sớm thành nhiều nhánh toán học và chuyên ngành.
 
 ## Available Now
 
@@ -79,6 +81,21 @@ Entry points:
 - [Module 01 exercises](OOAD-Knowledge-Base/08-Exercises/01-requirements.md) và [exam preparation](OOAD-Knowledge-Base/09-Exam-Preparation/01-requirements.md).
 
 Phần lý thuyết nằm trong từng lesson; bài tập và luyện thi được tập trung theo module để tránh lặp và giữ mạch học.
+
+### Artificial Intelligence — Practical Foundations
+
+Track AI dành cho người đã biết lập trình cơ bản và muốn hiểu cách biến một nhu cầu thành AI feature có thể đánh giá:
+
+> Problem → Data → Baseline → Model → Evaluation → Grounded AI Feature → Production Feedback
+
+Các entry point:
+
+- [Track overview](artificial-intelligence-knowledge-base/README.md) — Scope, thứ tự 8 module và exit criteria.
+- [Learning roadmap](artificial-intelligence-knowledge-base/00-meta/learning-roadmap.md) — Vertical path, checkpoints và các hướng học tiếp.
+- [AI Mental Model](artificial-intelligence-knowledge-base/modules/01-ai-mental-model.md) — Điểm bắt đầu để phân biệt rule, predictive ML và generative AI.
+- [Grounded AI Assistant](artificial-intelligence-knowledge-base/modules/07-build-a-grounded-ai-assistant.md) — Vertical slice RAG có citation, fallback và permission boundary.
+
+Lý thuyết được đưa vào theo đúng thời điểm cần dùng, đi cùng ví dụ support-ticket xuyên suốt. Mathematics nâng cao, Computer Vision, Reinforcement Learning và distributed training là extension paths, không phải prerequisite của core track.
 
 ## How to Use This Repository
 
@@ -198,6 +215,12 @@ awesome-learning-computing/
 │       ├── 03-table-of-contents.md
 │       ├── 04-topic-dependencies.md
 │       └── topic-template.md
+├── artificial-intelligence-knowledge-base/
+│   ├── README.md
+│   ├── 00-meta/
+│   │   └── learning-roadmap.md
+│   └── modules/
+│       └── 01-ai-mental-model.md ... 08-responsible-ai-in-production.md
 └── OOAD-Knowledge-Base/
     ├── README.md
     ├── 00-Roadmap/
@@ -260,12 +283,14 @@ Quy tắc này giữ repository có cấu trúc và tránh tạo nhiều directo
 
 ### Phase 4 — Data and Artificial Intelligence
 
-- Mathematics for Machine Learning.
-- Data analysis and data engineering foundations.
-- Classical Machine Learning.
-- Deep Learning and representation learning.
-- Natural Language Processing and modern AI systems.
-- AI engineering, evaluation, safety and operations.
+- [x] AI practical foundations và problem framing.
+- [x] Data, baseline và classical Machine Learning workflow.
+- [x] Evaluation, error analysis và neural-network mental model.
+- [x] Language models, grounded assistant/RAG và responsible production.
+- [ ] Mathematics for Machine Learning chuyên sâu.
+- [ ] Data analysis and data engineering foundations.
+- [ ] Computer Vision, NLP và Deep Learning chuyên sâu.
+- [ ] Recommendation, time series và Reinforcement Learning.
 
 Roadmap ưu tiên hoàn thành vertical learning slices có exercises và review, thay vì mở đồng thời mọi track ở trạng thái dở dang.
 
