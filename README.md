@@ -40,7 +40,7 @@ Repository hướng tới ba kết quả:
 | Software Engineering | Testing, code quality, delivery, maintenance và engineering practices ngoài track Requirements & OOAD. | In progress |
 | Computer Systems | Computer architecture, operating systems, concurrency và performance. | Planned |
 | Networks and Distributed Systems | Networking, distributed computation, consistency, reliability và scalability. | Planned |
-| Data and Databases | Data modeling, SQL, storage engines, transactions và data systems. | Planned |
+| [Data and Databases](data-and-databases-knowledge-base/README.md) | Relational modeling, SQL, transactions, indexes, application integration và reliable data systems. | 8 modules available |
 | [Artificial Intelligence](artificial-intelligence-knowledge-base/README.md) | Problem framing, Machine Learning, evaluation, neural networks, LLM, RAG và production safety theo hướng thực dụng. | 8 modules available |
 | Cybersecurity | Security foundations, secure software, systems security và threat modeling. | Planned |
 | Cloud and DevOps | Cloud platforms, containers, infrastructure, observability và operations. | Planned |
@@ -49,6 +49,8 @@ Repository hướng tới ba kết quả:
 `8 modules available` nghĩa OOP Quick Review đã có toàn bộ lesson content và C++ examples. `Module 01 available` nghĩa foundation và toàn bộ lesson của Module 01 thuộc OOAD track đã hoàn thành; các module sau vẫn đang được triển khai.
 
 Artificial Intelligence cũng đã có đủ 8 core modules. Track này dùng Python làm ngôn ngữ minh họa, ưu tiên một vertical learning path từ problem tới production thay vì tách sớm thành nhiều nhánh toán học và chuyên ngành.
+
+Data and Databases đã có đủ 8 core modules với PostgreSQL làm hệ quản trị minh họa. Nội dung đi từ business facts và SQL tới transaction, performance, integration và recovery; các data systems chuyên biệt được giữ làm extension theo workload.
 
 ## Available Now
 
@@ -81,6 +83,22 @@ Entry points:
 - [Module 01 exercises](OOAD-Knowledge-Base/08-Exercises/01-requirements.md) và [exam preparation](OOAD-Knowledge-Base/09-Exam-Preparation/01-requirements.md).
 
 Phần lý thuyết nằm trong từng lesson; bài tập và luyện thi được tập trung theo module để tránh lặp và giữ mạch học.
+
+### Data and Databases — Practical Foundations
+
+Track Data and Databases đi từ facts của ứng dụng tới một data system có thể vận hành:
+
+> Business Facts → Schema & Constraints → Queries → Transactions → Performance → Reliable Operation
+
+Các entry point:
+
+- [Track overview](data-and-databases-knowledge-base/README.md) — Scope, case study và thứ tự 8 module.
+- [Learning roadmap](data-and-databases-knowledge-base/00-meta/learning-roadmap.md) — Checkpoints và hướng học tiếp theo vai trò.
+- [Database Mental Model](data-and-databases-knowledge-base/modules/01-database-mental-model.md) — Điểm bắt đầu cho relational data, keys, ACID và OLTP/OLAP.
+- [Writes, Transactions and Concurrency](data-and-databases-knowledge-base/modules/05-writes-transactions-concurrency.md) — Correctness khi nhiều requests cùng thay đổi dữ liệu.
+- [Reliable Data Systems](data-and-databases-knowledge-base/modules/08-reliable-data-systems.md) — Backup/restore, monitoring và cách chọn data store theo workload.
+
+PostgreSQL được dùng để ví dụ có thể chạy, nhưng track ưu tiên mental model chuyển giao được. NoSQL, warehouse, sharding và database internals sâu là extension paths, không bị đưa vào core chỉ để curriculum trông lớn hơn.
 
 ### Artificial Intelligence — Practical Foundations
 
@@ -221,6 +239,12 @@ awesome-learning-computing/
 │   │   └── learning-roadmap.md
 │   └── modules/
 │       └── 01-ai-mental-model.md ... 08-responsible-ai-in-production.md
+├── data-and-databases-knowledge-base/
+│   ├── README.md
+│   ├── 00-meta/
+│   │   └── learning-roadmap.md
+│   └── modules/
+│       └── 01-database-mental-model.md ... 08-reliable-data-systems.md
 └── OOAD-Knowledge-Base/
     ├── README.md
     ├── 00-Roadmap/
@@ -283,12 +307,15 @@ Quy tắc này giữ repository có cấu trúc và tránh tạo nhiều directo
 
 ### Phase 4 — Data and Artificial Intelligence
 
+- [x] Data and Databases practical foundations.
+- [x] Relational modeling, SQL, transactions và concurrency.
+- [x] Query performance, application integration và data reliability.
 - [x] AI practical foundations và problem framing.
 - [x] Data, baseline và classical Machine Learning workflow.
 - [x] Evaluation, error analysis và neural-network mental model.
 - [x] Language models, grounded assistant/RAG và responsible production.
 - [ ] Mathematics for Machine Learning chuyên sâu.
-- [ ] Data analysis and data engineering foundations.
+- [ ] Data analysis and data engineering foundations chuyên sâu.
 - [ ] Computer Vision, NLP và Deep Learning chuyên sâu.
 - [ ] Recommendation, time series và Reinforcement Learning.
 
