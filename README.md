@@ -43,7 +43,7 @@ Repository hướng tới ba kết quả:
 | [Data and Databases](data-and-databases-knowledge-base/README.md) | Relational modeling, SQL, transactions, indexes, application integration và reliable data systems. | 8 modules available |
 | [Artificial Intelligence](artificial-intelligence-knowledge-base/README.md) | Problem framing, Machine Learning, evaluation, neural networks, LLM, RAG và production safety theo hướng thực dụng. | 8 modules available |
 | Cybersecurity | Security foundations, secure software, systems security và threat modeling. | Planned |
-| Cloud and DevOps | Cloud platforms, containers, infrastructure, observability và operations. | Planned |
+| [Cloud and DevOps](cloud-and-devops-knowledge-base/README.md) | Runtime, containers, cloud building blocks, Infrastructure as Code, CI/CD, observability và reliable operations. | 8 modules available |
 | Mathematics for Computing | Logic, discrete structures, probability, statistics và linear algebra. | Planned |
 
 `8 modules available` nghĩa OOP Quick Review đã có toàn bộ lesson content và C++ examples. `Module 01 available` nghĩa foundation và toàn bộ lesson của Module 01 thuộc OOAD track đã hoàn thành; các module sau vẫn đang được triển khai.
@@ -51,6 +51,8 @@ Repository hướng tới ba kết quả:
 Artificial Intelligence cũng đã có đủ 8 core modules. Track này dùng Python làm ngôn ngữ minh họa, ưu tiên một vertical learning path từ problem tới production thay vì tách sớm thành nhiều nhánh toán học và chuyên ngành.
 
 Data and Databases đã có đủ 8 core modules với PostgreSQL làm hệ quản trị minh họa. Nội dung đi từ business facts và SQL tới transaction, performance, integration và recovery; các data systems chuyên biệt được giữ làm extension theo workload.
+
+Cloud and DevOps đã có đủ 8 core modules theo một vertical path từ process tới production. Track ưu tiên managed services, một artifact bất biến và một kiến trúc nhỏ có thể vận hành; Kubernetes, multi-region và platform engineering nằm ở extension paths khi workload thực sự cần.
 
 ## Available Now
 
@@ -114,6 +116,21 @@ Các entry point:
 - [Grounded AI Assistant](artificial-intelligence-knowledge-base/modules/07-build-a-grounded-ai-assistant.md) — Vertical slice RAG có citation, fallback và permission boundary.
 
 Lý thuyết được đưa vào theo đúng thời điểm cần dùng, đi cùng ví dụ support-ticket xuyên suốt. Mathematics nâng cao, Computer Vision, Reinforcement Learning và distributed training là extension paths, không phải prerequisite của core track.
+
+### Cloud and DevOps — Practical Foundations
+
+Track Cloud and DevOps dành cho người đã viết ứng dụng nhỏ và muốn hiểu trọn đường đi từ source code tới một service có thể phát hành, quan sát và phục hồi:
+
+> Source code → Build artifact → Runtime → Cloud service → Release → Observe → Improve
+
+Các entry point:
+
+- [Track overview](cloud-and-devops-knowledge-base/README.md) — Scope, case study, thứ tự 8 module và exit criteria.
+- [Learning roadmap](cloud-and-devops-knowledge-base/00-meta/learning-roadmap.md) — Checkpoints và bài tốt nghiệp production-readiness.
+- [Cloud and DevOps Mental Model](cloud-and-devops-knowledge-base/modules/01-cloud-devops-mental-model.md) — Điểm bắt đầu để hiểu value flow và shared responsibility.
+- [A Production-Ready Small Service](cloud-and-devops-knowledge-base/modules/08-production-ready-small-service.md) — Ghép runtime, cloud, delivery, observability và recovery thành một thiết kế hoàn chỉnh.
+
+Case Learning Journal xuyên suốt dùng một managed container service, managed PostgreSQL và object storage. Các công nghệ phức tạp chỉ xuất hiện cùng decision signals, tránh biến DevOps thành catalog công cụ.
 
 ## How to Use This Repository
 
@@ -245,6 +262,12 @@ awesome-learning-computing/
 │   │   └── learning-roadmap.md
 │   └── modules/
 │       └── 01-database-mental-model.md ... 08-reliable-data-systems.md
+├── cloud-and-devops-knowledge-base/
+│   ├── README.md
+│   ├── 00-meta/
+│   │   └── learning-roadmap.md
+│   └── modules/
+│       └── 01-cloud-devops-mental-model.md ... 08-production-ready-small-service.md
 └── OOAD-Knowledge-Base/
     ├── README.md
     ├── 00-Roadmap/
@@ -304,6 +327,15 @@ Quy tắc này giữ repository có cấu trúc và tránh tạo nhiều directo
 - Version control and collaborative development.
 - Delivery, maintenance and observability.
 - Software Architecture and distributed systems.
+
+### Phase 3B — Cloud and DevOps
+
+- [x] Cloud, DevOps và shared-responsibility mental model.
+- [x] Application runtime, containers và cloud building blocks.
+- [x] Infrastructure as Code, environments, identity và secrets.
+- [x] CI/CD, safe delivery và database migration.
+- [x] Observability, reliability, security và incident response.
+- [x] Production-ready service case study và failure drills.
 
 ### Phase 4 — Data and Artificial Intelligence
 
