@@ -44,7 +44,7 @@ Repository hướng tới ba kết quả:
 | [Artificial Intelligence](artificial-intelligence-knowledge-base/README.md) | Problem framing, Machine Learning, evaluation, neural networks, LLM, RAG và production safety theo hướng thực dụng. | 8 modules available |
 | Cybersecurity | Security foundations, secure software, systems security và threat modeling. | Planned |
 | [Cloud and DevOps](cloud-and-devops-knowledge-base/README.md) | Runtime, containers, cloud building blocks, Infrastructure as Code, CI/CD, observability và reliable operations. | 8 modules available |
-| Mathematics for Computing | Logic, discrete structures, probability, statistics và linear algebra. | Planned |
+| [Mathematics for Computing](mathematics-for-computing-knowledge-base/README.md) | Mathematical reasoning, logic, discrete structures, probability, statistics, graphs và linear algebra. | 8 modules available |
 
 `8 modules available` nghĩa OOP Quick Review đã có toàn bộ lesson content và C++ examples. `Module 01 available` nghĩa foundation và toàn bộ lesson của Module 01 thuộc OOAD track đã hoàn thành; các module sau vẫn đang được triển khai.
 
@@ -53,6 +53,8 @@ Artificial Intelligence cũng đã có đủ 8 core modules. Track này dùng Py
 Data and Databases đã có đủ 8 core modules với PostgreSQL làm hệ quản trị minh họa. Nội dung đi từ business facts và SQL tới transaction, performance, integration và recovery; các data systems chuyên biệt được giữ làm extension theo workload.
 
 Cloud and DevOps đã có đủ 8 core modules theo một vertical path từ process tới production. Track ưu tiên managed services, một artifact bất biến và một kiến trúc nhỏ có thể vận hành; Kubernetes, multi-region và platform engineering nằm ở extension paths khi workload thực sự cần.
+
+Mathematics for Computing đã có đủ 8 core modules, đi từ cách viết và chứng minh claim tới logic, discrete structures, uncertainty, graphs và vectors. Track ưu tiên meaning và reasoning trước công thức; calculus, cryptography và Mathematics for Machine Learning chuyên sâu được giữ làm extension paths.
 
 ## Available Now
 
@@ -131,6 +133,21 @@ Các entry point:
 - [A Production-Ready Small Service](cloud-and-devops-knowledge-base/modules/08-production-ready-small-service.md) — Ghép runtime, cloud, delivery, observability và recovery thành một thiết kế hoàn chỉnh.
 
 Case Learning Journal xuyên suốt dùng một managed container service, managed PostgreSQL và object storage. Các công nghệ phức tạp chỉ xuất hiện cùng decision signals, tránh biến DevOps thành catalog công cụ.
+
+### Mathematics for Computing — Practical Foundations
+
+Track Mathematics for Computing dành cho người đã biết lập trình cơ bản và muốn dùng toán như công cụ reasoning thay vì học thuộc công thức:
+
+> Statement → Model → Reason → Prove → Measure → Apply
+
+Các entry point:
+
+- [Track overview](mathematics-for-computing-knowledge-base/README.md) — Scope, case study, thứ tự 8 module và exit criteria.
+- [Learning roadmap](mathematics-for-computing-knowledge-base/00-meta/learning-roadmap.md) — Checkpoints, bài tích hợp và extension paths.
+- [Mathematical Thinking and Proof](mathematics-for-computing-knowledge-base/modules/01-mathematical-thinking-and-proof.md) — Điểm bắt đầu để phân biệt claim, example, counterexample và proof.
+- [Vectors, Matrices and Linear Algebra](mathematics-for-computing-knowledge-base/modules/08-vectors-matrices-linear-algebra.md) — Module cuối nối representation, transformation và similarity với computing.
+
+Case Learning Platform xuyên suốt nối eligibility rules, prerequisite graph, completion data và course vectors. Ký hiệu chỉ được đưa vào sau khi meaning và problem đã rõ.
 
 ## How to Use This Repository
 
@@ -268,6 +285,12 @@ awesome-learning-computing/
 │   │   └── learning-roadmap.md
 │   └── modules/
 │       └── 01-cloud-devops-mental-model.md ... 08-production-ready-small-service.md
+├── mathematics-for-computing-knowledge-base/
+│   ├── README.md
+│   ├── 00-meta/
+│   │   └── learning-roadmap.md
+│   └── modules/
+│       └── 01-mathematical-thinking-and-proof.md ... 08-vectors-matrices-linear-algebra.md
 └── OOAD-Knowledge-Base/
     ├── README.md
     ├── 00-Roadmap/
@@ -319,6 +342,15 @@ Quy tắc này giữ repository có cấu trúc và tránh tạo nhiều directo
 - Data Structures and Algorithms.
 - Computer Architecture and Operating Systems.
 - Networking and Database Systems.
+
+### Phase 2B — Mathematics for Computing
+
+- [x] Mathematical reasoning, proof và precise claims.
+- [x] Logic, sets, functions và relations.
+- [x] Induction, recursion và loop invariants.
+- [x] Counting, probability và statistical reasoning.
+- [x] Graphs, trees và dependency modeling.
+- [x] Vectors, matrices và linear transformations.
 
 ### Phase 3 — Software Engineering
 
